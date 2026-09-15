@@ -1,0 +1,14 @@
+# Frame
+
+> React source components for chat interfaces and status presentation.
+
+## Components
+
+- [ChatMessage](https://github.com/BeibeiZhang/frame-design-system/blob/main/components/chat-message.tsx): User and assistant message presentation with a visual streaming state. [Example](https://github.com/BeibeiZhang/frame-design-system/blob/main/examples/chat-message.tsx). [Viewer](https://system.beibeidesign.com/#chat-message).
+- [ChatPanel](https://github.com/BeibeiZhang/frame-design-system/blob/main/components/chat-panel.tsx): Conversation layout with message and composer slots and near-bottom scrolling. [Example](https://github.com/BeibeiZhang/frame-design-system/blob/main/examples/chat-panel.tsx). [Viewer](https://system.beibeidesign.com/#chat-panel).
+- [ChatInput](https://github.com/BeibeiZhang/frame-design-system/blob/main/components/chat-input.tsx): Prompt composer with callback-based sending, optional attachments and mentions. No model provider is included. [Example](https://github.com/BeibeiZhang/frame-design-system/blob/main/examples/chat-input.tsx). [Viewer](https://system.beibeidesign.com/#chat-input).
+- [MessageCard](https://github.com/BeibeiZhang/frame-design-system/blob/main/components/message-card.tsx): Inline event notice with information, success or warning tone and an optional action slot. [Example](https://github.com/BeibeiZhang/frame-design-system/blob/main/examples/message-card.tsx). [Viewer](https://system.beibeidesign.com/#message-card).
+- [StatusTag](https://github.com/BeibeiZhang/frame-design-system/blob/main/components/status-tag.tsx): Semantic status pill for pending, processing, review and completed states. [Example](https://github.com/BeibeiZhang/frame-design-system/blob/main/examples/status-tag.tsx). [Viewer](https://system.beibeidesign.com/#status-tag).
+- [Tag](https://github.com/BeibeiZhang/frame-design-system/blob/main/components/tag.tsx): Compact neutral label with an optional outline and tooltip. [Example](https://github.com/BeibeiZhang/frame-design-system/blob/main/examples/tag.tsx). [Viewer](https://system.beibeidesign.com/#tag).
+
+Citation and tool transparency are design guidance, not installable components in this collection.
