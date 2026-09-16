@@ -1,6 +1,14 @@
-# Frame
+# Frame Design System
 
-> React source components for chat interfaces and status presentation.
+> An open React design system and component library for AI products.
+
+The exported React component collection is open-source and MIT licensed. People and AI can read, reuse, verify, and evolve Frame's design language together. Frame pairs AI-readable implementation guidance with automated design checks for machine-checkable rules to help generated interfaces stay aligned with the system. Passing these checks does not guarantee full compliance; human review remains necessary.
+
+## Catalog
+
+- [Live component catalog](https://system.beibeidesign.com/#buttons)
+- [AI interaction patterns](https://system.beibeidesign.com/#ai-patterns)
+- [Design principles](https://system.beibeidesign.com/#principles)
 
 ## Components
 

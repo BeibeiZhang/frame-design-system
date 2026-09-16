@@ -1,15 +1,19 @@
-# Frame React components
+# Frame Design System
 
-Small source-copy components for chat messages, prompt composition and AI result status. These components render UI and callbacks; they do not call a model or provide an agent runtime.
+Frame is an open React design system and component library for AI products. The exported React component collection is open-source and MIT licensed. People and AI can read, reuse, verify, and evolve its design language together. Browse the live catalog to compare components, patterns, foundations and real product usage before installing source.
+
+**[Browse components](https://system.beibeidesign.com/#buttons)** · **[Explore AI patterns](https://system.beibeidesign.com/#ai-patterns)** · **[Read the design principles](https://system.beibeidesign.com/#principles)**
+
+An elegant design language and clear structure let the product speak for itself. Frame pairs AI-readable implementation guidance with automated design checks for machine-checkable rules to help generated interfaces stay aligned with the system. Passing these checks does not guarantee full compliance; human review remains necessary. These source-copy components render UI and callbacks; they do not call a model or provide an agent runtime.
 
 ## Components
 
-- **[ChatMessage](components/chat-message.tsx)** — User and assistant message presentation with a visual streaming state. [Example](examples/chat-message.tsx) · [Viewer](https://system.beibeidesign.com/#chat-message)
-- **[ChatPanel](components/chat-panel.tsx)** — Conversation layout with message and composer slots and near-bottom scrolling. [Example](examples/chat-panel.tsx) · [Viewer](https://system.beibeidesign.com/#chat-panel)
-- **[ChatInput](components/chat-input.tsx)** — Prompt composer with callback-based sending, optional attachments and mentions. No model provider is included. [Example](examples/chat-input.tsx) · [Viewer](https://system.beibeidesign.com/#chat-input)
-- **[MessageCard](components/message-card.tsx)** — Inline event notice with information, success or warning tone and an optional action slot. [Example](examples/message-card.tsx) · [Viewer](https://system.beibeidesign.com/#message-card)
-- **[StatusTag](components/status-tag.tsx)** — Semantic status pill for pending, processing, review and completed states. [Example](examples/status-tag.tsx) · [Viewer](https://system.beibeidesign.com/#status-tag)
-- **[Tag](components/tag.tsx)** — Compact neutral label with an optional outline and tooltip. [Example](examples/tag.tsx) · [Viewer](https://system.beibeidesign.com/#tag)
+- **[ChatMessage](https://system.beibeidesign.com/#chat-message)** — User and assistant message presentation with a visual streaming state. [Source](components/chat-message.tsx) · [Example](examples/chat-message.tsx)
+- **[ChatPanel](https://system.beibeidesign.com/#chat-panel)** — Conversation layout with message and composer slots and near-bottom scrolling. [Source](components/chat-panel.tsx) · [Example](examples/chat-panel.tsx)
+- **[ChatInput](https://system.beibeidesign.com/#chat-input)** — Prompt composer with callback-based sending, optional attachments and mentions. No model provider is included. [Source](components/chat-input.tsx) · [Example](examples/chat-input.tsx)
+- **[MessageCard](https://system.beibeidesign.com/#message-card)** — Inline event notice with information, success or warning tone and an optional action slot. [Source](components/message-card.tsx) · [Example](examples/message-card.tsx)
+- **[StatusTag](https://system.beibeidesign.com/#status-tag)** — Semantic status pill for pending, processing, review and completed states. [Source](components/status-tag.tsx) · [Example](examples/status-tag.tsx)
+- **[Tag](https://system.beibeidesign.com/#tag)** — Compact neutral label with an optional outline and tooltip. [Source](components/tag.tsx) · [Example](examples/tag.tsx)
 
 ## Setup
 
@@ -35,7 +39,7 @@ This repository is a one-way generated export. The canonical source is maintaine
 
 ## Compatibility
 
-Verified with shadcn 4.21.0 in clean React 19.2.5/Vite 8.0.10 apps using Tailwind 3.4.19 and Tailwind 4.3.3, including combined manual-copy builds and rendering. Source examples contain no private assets, provider calls or enabled microphone features.
+Verified with shadcn 4.21.0 in clean React 19.2.5/Vite 8.0.10 apps using Tailwind 3.4.19 and 4.3.3, including combined manual-copy builds and rendering. Source examples contain no private assets, provider calls or enabled microphone features.
 
 ## License
 
