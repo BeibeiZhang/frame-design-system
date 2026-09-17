@@ -1,9 +1,9 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "frame-chat-message",
+  "name": "frame-side-panel-body",
   "type": "registry:component",
-  "title": "ChatMessage",
-  "description": "User and assistant message presentation with a visual streaming state.",
+  "title": "SidePanelBody",
+  "description": "Scrollable conversation inspector body with spacing and an automatic scrollbar.",
   "author": "Beibei Zhang",
   "dependencies": [
     "react@19.2.5",
@@ -12,10 +12,10 @@
   ],
   "files": [
     {
-      "path": "components/chat-message.tsx",
+      "path": "components/side-panel-body.tsx",
       "type": "registry:file",
-      "target": "~/src/components/frame/chat-message.tsx",
-      "content": "\"use client\";\n\n// Frame component source. Keep the accompanying LICENSE and frame.css.\nimport { Sparkles } from 'lucide-react';\nimport { type ReactNode } from 'react';\n\nexport function ChatMessage({ role, content, streaming = false, avatar, showAvatar = true, meta, }: {\n    role: 'user' | 'assistant';\n    content?: ReactNode;\n    streaming?: boolean;\n    avatar?: ReactNode;\n    showAvatar?: boolean;\n    meta?: ReactNode;\n}) {\n    const isUser = role === 'user';\n    const bubbleStyle = isUser\n        ? { background: 'var(--color-selected-bg)', color: 'var(--color-selected-text)' }\n        : undefined;\n    const bubbleClass = isUser\n        ? 'rounded-[16px] rounded-tr-[4px] px-4 py-3 type-body'\n        : 'rounded-[16px] rounded-tl-[4px] px-4 py-3 type-body bg-bg-message text-text-primary';\n    const defaultAvatar = (<div className=\"w-8 h-8 shrink-0 flex items-center justify-center rounded-full bg-bg-message text-text-primary\" aria-hidden>\n      <Sparkles size={16} strokeWidth={1.5}/>\n    </div>);\n    return (<div className={`flex gap-3 ${isUser ? 'flex-row-reverse' : 'flex-row'}`}>\n      {!isUser && showAvatar && (avatar ?? defaultAvatar)}\n      <div className={`flex flex-col gap-1 max-w-[80%] min-w-0 ${isUser ? 'items-end' : 'items-start'}`}>\n        <div className={bubbleClass} style={bubbleStyle}>\n          {content}\n          {streaming && (<span className={`inline-flex items-center gap-1 align-middle${content ? ' ml-1' : ''}`} role=\"status\" aria-label=\"Assistant is typing\">\n              <span className=\"typing-dot w-1.5 h-1.5 rounded-full bg-current opacity-60\"/>\n              <span className=\"typing-dot w-1.5 h-1.5 rounded-full bg-current opacity-60\"/>\n              <span className=\"typing-dot w-1.5 h-1.5 rounded-full bg-current opacity-60\"/>\n            </span>)}\n        </div>\n        {meta && <div className=\"type-caption text-text-secondary px-1\">{meta}</div>}\n      </div>\n    </div>);\n}\n"
+      "target": "~/src/components/frame/side-panel-body.tsx",
+      "content": "\"use client\";\n\n// Frame component source. Keep the accompanying LICENSE and frame.css.\nimport { type ReactNode } from 'react';\n\nexport function SidePanelBody({ children }: {\n    children: ReactNode;\n}) {\n    return (<div className=\"flex-1 overflow-y-auto min-h-0 px-3 pb-6 flex flex-col gap-4 scrollbar-autohide\">\n      {children}\n    </div>);\n}\n"
     },
     {
       "path": "styles/frame.css",

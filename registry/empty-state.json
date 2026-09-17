@@ -1,9 +1,9 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "frame-chat-message",
+  "name": "frame-empty-state",
   "type": "registry:component",
-  "title": "ChatMessage",
-  "description": "User and assistant message presentation with a visual streaming state.",
+  "title": "EmptyState",
+  "description": "Icon and explanation for an empty message, result or reference area.",
   "author": "Beibei Zhang",
   "dependencies": [
     "react@19.2.5",
@@ -12,10 +12,10 @@
   ],
   "files": [
     {
-      "path": "components/chat-message.tsx",
+      "path": "components/empty-state.tsx",
       "type": "registry:file",
-      "target": "~/src/components/frame/chat-message.tsx",
-      "content": "\"use client\";\n\n// Frame component source. Keep the accompanying LICENSE and frame.css.\nimport { Sparkles } from 'lucide-react';\nimport { type ReactNode } from 'react';\n\nexport function ChatMessage({ role, content, streaming = false, avatar, showAvatar = true, meta, }: {\n    role: 'user' | 'assistant';\n    content?: ReactNode;\n    streaming?: boolean;\n    avatar?: ReactNode;\n    showAvatar?: boolean;\n    meta?: ReactNode;\n}) {\n    const isUser = role === 'user';\n    const bubbleStyle = isUser\n        ? { background: 'var(--color-selected-bg)', color: 'var(--color-selected-text)' }\n        : undefined;\n    const bubbleClass = isUser\n        ? 'rounded-[16px] rounded-tr-[4px] px-4 py-3 type-body'\n        : 'rounded-[16px] rounded-tl-[4px] px-4 py-3 type-body bg-bg-message text-text-primary';\n    const defaultAvatar = (<div className=\"w-8 h-8 shrink-0 flex items-center justify-center rounded-full bg-bg-message text-text-primary\" aria-hidden>\n      <Sparkles size={16} strokeWidth={1.5}/>\n    </div>);\n    return (<div className={`flex gap-3 ${isUser ? 'flex-row-reverse' : 'flex-row'}`}>\n      {!isUser && showAvatar && (avatar ?? defaultAvatar)}\n      <div className={`flex flex-col gap-1 max-w-[80%] min-w-0 ${isUser ? 'items-end' : 'items-start'}`}>\n        <div className={bubbleClass} style={bubbleStyle}>\n          {content}\n          {streaming && (<span className={`inline-flex items-center gap-1 align-middle${content ? ' ml-1' : ''}`} role=\"status\" aria-label=\"Assistant is typing\">\n              <span className=\"typing-dot w-1.5 h-1.5 rounded-full bg-current opacity-60\"/>\n              <span className=\"typing-dot w-1.5 h-1.5 rounded-full bg-current opacity-60\"/>\n              <span className=\"typing-dot w-1.5 h-1.5 rounded-full bg-current opacity-60\"/>\n            </span>)}\n        </div>\n        {meta && <div className=\"type-caption text-text-secondary px-1\">{meta}</div>}\n      </div>\n    </div>);\n}\n"
+      "target": "~/src/components/frame/empty-state.tsx",
+      "content": "\"use client\";\n\n// Frame component source. Keep the accompanying LICENSE and frame.css.\nimport { type LucideIcon } from 'lucide-react';\n\nexport function EmptyState({ icon: Icon, title, description, className = '', }: {\n    icon: LucideIcon;\n    title: string;\n    description?: string;\n    className?: string;\n}) {\n    return (<div className={`flex flex-col items-center justify-center gap-2 py-8 px-4 text-center ${className}`}>\n      <div className=\"w-10 h-10 flex items-center justify-center rounded-full bg-bg-hover text-text-primary\">\n        <Icon size={20} strokeWidth={1.5}/>\n      </div>\n      <div className=\"type-detail-emphasized text-text-primary\">{title}</div>\n      {description && (<div className=\"type-detail text-text-secondary max-w-[280px]\">{description}</div>)}\n    </div>);\n}\n"
     },
     {
       "path": "styles/frame.css",
