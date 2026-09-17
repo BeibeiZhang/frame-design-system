@@ -1,9 +1,9 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "frame-chat-message",
+  "name": "frame-time-pill",
   "type": "registry:component",
-  "title": "ChatMessage",
-  "description": "User and assistant message presentation with a visual streaming state.",
+  "title": "TimePill",
+  "description": "Compact time or effort label using the shared status presentation.",
   "author": "Beibei Zhang",
   "dependencies": [
     "react@19.2.5",
@@ -12,10 +12,10 @@
   ],
   "files": [
     {
-      "path": "components/chat-message.tsx",
+      "path": "components/time-pill.tsx",
       "type": "registry:file",
-      "target": "~/src/components/frame/chat-message.tsx",
-      "content": "\"use client\";\n\n// Frame component source. Keep the accompanying LICENSE and frame.css.\nimport { Sparkles } from 'lucide-react';\nimport { type ReactNode } from 'react';\n\nexport function ChatMessage({ role, content, streaming = false, avatar, showAvatar = true, meta, }: {\n    role: 'user' | 'assistant';\n    content?: ReactNode;\n    streaming?: boolean;\n    avatar?: ReactNode;\n    showAvatar?: boolean;\n    meta?: ReactNode;\n}) {\n    const isUser = role === 'user';\n    const bubbleStyle = isUser\n        ? { background: 'var(--color-selected-bg)', color: 'var(--color-selected-text)' }\n        : undefined;\n    const bubbleClass = isUser\n        ? 'rounded-[16px] rounded-tr-[4px] px-4 py-3 type-body'\n        : 'rounded-[16px] rounded-tl-[4px] px-4 py-3 type-body bg-bg-message text-text-primary';\n    const defaultAvatar = (<div className=\"w-8 h-8 shrink-0 flex items-center justify-center rounded-full bg-bg-message text-text-primary\" aria-hidden>\n      <Sparkles size={16} strokeWidth={1.5}/>\n    </div>);\n    return (<div className={`flex gap-3 ${isUser ? 'flex-row-reverse' : 'flex-row'}`}>\n      {!isUser && showAvatar && (avatar ?? defaultAvatar)}\n      <div className={`flex flex-col gap-1 max-w-[80%] min-w-0 ${isUser ? 'items-end' : 'items-start'}`}>\n        <div className={bubbleClass} style={bubbleStyle}>\n          {content}\n          {streaming && (<span className={`inline-flex items-center gap-1 align-middle${content ? ' ml-1' : ''}`} role=\"status\" aria-label=\"Assistant is typing\">\n              <span className=\"typing-dot w-1.5 h-1.5 rounded-full bg-current opacity-60\"/>\n              <span className=\"typing-dot w-1.5 h-1.5 rounded-full bg-current opacity-60\"/>\n              <span className=\"typing-dot w-1.5 h-1.5 rounded-full bg-current opacity-60\"/>\n            </span>)}\n        </div>\n        {meta && <div className=\"type-caption text-text-secondary px-1\">{meta}</div>}\n      </div>\n    </div>);\n}\n"
+      "target": "~/src/components/frame/time-pill.tsx",
+      "content": "\"use client\";\n\n// Frame component source. Keep the accompanying LICENSE and frame.css.\nimport { AlertTriangle, BadgeCheck, Clock, type LucideIcon, Send, Smile, User, XCircle } from 'lucide-react';\nimport { type ReactNode } from 'react';\n\nexport function TimePill({ time, tooltip }: {\n    time: string;\n    tooltip?: string;\n}) {\n    return <StatusTag variant=\"in-progress\" label={time} size=\"sm\" icon={User} tooltip={tooltip}/>;\n}\n\nexport type StatusVariant = 'pending' | 'in-progress' | 'submitted' | 'in-review' | 'success' | 'failed' | 'expired' | 'neutral';\n\nconst STATUS_ICONS: Record<StatusVariant, LucideIcon> = {\n    'pending': AlertTriangle,\n    'in-progress': Clock,\n    'submitted': Send,\n    'in-review': Smile,\n    'success': BadgeCheck,\n    'failed': XCircle,\n    'expired': Clock,\n    'neutral': Clock,\n};\n\nexport function StatusTag({ variant, label, showIcon = true, size = 'md', icon, outline = false, tooltip, }: {\n    variant: StatusVariant;\n    label: ReactNode;\n    showIcon?: boolean;\n    size?: 'sm' | 'md';\n    icon?: LucideIcon;\n    outline?: boolean;\n    tooltip?: string;\n}) {\n    const Icon = icon ?? STATUS_ICONS[variant];\n    const isSmall = size === 'sm';\n    const surface = outline\n        ? { background: 'var(--color-bg-page)', color: 'var(--status-fg)', border: '1px solid var(--color-stroke-outline)' }\n        : { background: 'var(--status-bg)', color: 'var(--status-fg)' };\n    return (<span className={`status-${variant} inline-flex items-center whitespace-nowrap shrink-0 rounded-[4px] tracking-[-0.3px] font-normal ${isSmall ? 'gap-1 px-2 py-0.5 type-caption' : 'gap-1.5 px-3 py-1 type-detail'} ${tooltip ? 'cursor-help' : ''}`} style={surface} title={tooltip} tabIndex={tooltip ? 0 : undefined} role={tooltip ? 'note' : undefined}>\n      {showIcon && <Icon size={isSmall ? 12 : 14} strokeWidth={2}/>}\n      {label}\n    </span>);\n}\n"
     },
     {
       "path": "styles/frame.css",

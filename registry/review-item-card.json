@@ -1,9 +1,9 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "frame-chat-message",
+  "name": "frame-review-item-card",
   "type": "registry:component",
-  "title": "ChatMessage",
-  "description": "User and assistant message presentation with a visual streaming state.",
+  "title": "ReviewItemCard",
+  "description": "Presentational review-result row with type, time and completed state; does not implement a review workflow.",
   "author": "Beibei Zhang",
   "dependencies": [
     "react@19.2.5",
@@ -12,10 +12,10 @@
   ],
   "files": [
     {
-      "path": "components/chat-message.tsx",
+      "path": "components/review-item-card.tsx",
       "type": "registry:file",
-      "target": "~/src/components/frame/chat-message.tsx",
-      "content": "\"use client\";\n\n// Frame component source. Keep the accompanying LICENSE and frame.css.\nimport { Sparkles } from 'lucide-react';\nimport { type ReactNode } from 'react';\n\nexport function ChatMessage({ role, content, streaming = false, avatar, showAvatar = true, meta, }: {\n    role: 'user' | 'assistant';\n    content?: ReactNode;\n    streaming?: boolean;\n    avatar?: ReactNode;\n    showAvatar?: boolean;\n    meta?: ReactNode;\n}) {\n    const isUser = role === 'user';\n    const bubbleStyle = isUser\n        ? { background: 'var(--color-selected-bg)', color: 'var(--color-selected-text)' }\n        : undefined;\n    const bubbleClass = isUser\n        ? 'rounded-[16px] rounded-tr-[4px] px-4 py-3 type-body'\n        : 'rounded-[16px] rounded-tl-[4px] px-4 py-3 type-body bg-bg-message text-text-primary';\n    const defaultAvatar = (<div className=\"w-8 h-8 shrink-0 flex items-center justify-center rounded-full bg-bg-message text-text-primary\" aria-hidden>\n      <Sparkles size={16} strokeWidth={1.5}/>\n    </div>);\n    return (<div className={`flex gap-3 ${isUser ? 'flex-row-reverse' : 'flex-row'}`}>\n      {!isUser && showAvatar && (avatar ?? defaultAvatar)}\n      <div className={`flex flex-col gap-1 max-w-[80%] min-w-0 ${isUser ? 'items-end' : 'items-start'}`}>\n        <div className={bubbleClass} style={bubbleStyle}>\n          {content}\n          {streaming && (<span className={`inline-flex items-center gap-1 align-middle${content ? ' ml-1' : ''}`} role=\"status\" aria-label=\"Assistant is typing\">\n              <span className=\"typing-dot w-1.5 h-1.5 rounded-full bg-current opacity-60\"/>\n              <span className=\"typing-dot w-1.5 h-1.5 rounded-full bg-current opacity-60\"/>\n              <span className=\"typing-dot w-1.5 h-1.5 rounded-full bg-current opacity-60\"/>\n            </span>)}\n        </div>\n        {meta && <div className=\"type-caption text-text-secondary px-1\">{meta}</div>}\n      </div>\n    </div>);\n}\n"
+      "target": "~/src/components/frame/review-item-card.tsx",
+      "content": "\"use client\";\n\n// Frame component source. Keep the accompanying LICENSE and frame.css.\nimport { AlertTriangle, ChevronRight, FileText, type LucideIcon, Mail, Ticket } from 'lucide-react';\n\nconst REVIEW_TYPE_ICONS: Record<string, LucideIcon> = {\n    Document: FileText,\n    Tickets: Ticket,\n    Email: Mail,\n    Error: AlertTriangle,\n};\n\nexport function ReviewItemCard({ title, type, time, done = false, icon, interactive = false, }: {\n    title: string;\n    source?: string;\n    type: string;\n    time: string;\n    done?: boolean;\n    icon?: LucideIcon;\n    interactive?: boolean;\n}) {\n    const Icon = icon ?? REVIEW_TYPE_ICONS[type] ?? FileText;\n    return (<div className={`px-5 py-4 flex items-center gap-3.5 transition-all ${done ? 'opacity-50' : ''}`}>\n      <Icon size={22} strokeWidth={1.75} className=\"text-text-primary shrink-0 icon-theme\"/>\n      <div className=\"flex-1 min-w-0\">\n        <div className={`type-detail-emphasized text-text-primary ${done ? 'line-through' : ''}`}>\n          {title}\n        </div>\n        <div className=\"type-detail text-text-primary mt-1\">\n          {type} · {time}\n        </div>\n      </div>\n      {interactive && <ChevronRight size={16} className=\"text-text-primary shrink-0\"/>}\n    </div>);\n}\n"
     },
     {
       "path": "styles/frame.css",
