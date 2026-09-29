@@ -4,7 +4,15 @@ Frame is an open React design system and component library for AI products. The 
 
 **[Browse components](https://system.beibeidesign.com/#buttons)** · **[Explore AI patterns](https://system.beibeidesign.com/#ai-patterns)** · **[Read the design principles](https://system.beibeidesign.com/#principles)**
 
-An elegant design language and clear structure let the product speak for itself. Frame pairs AI-readable implementation guidance with automated design checks for machine-checkable rules to help generated interfaces stay aligned with the system. Passing these checks does not guarantee full compliance; human review remains necessary. These source-copy components render UI and callbacks; they do not call a model or provide an agent runtime.
+An elegant design language and clear structure let the product speak for itself. Frame's AI implementation guide and machine-readable rules help generated interfaces stay aligned with the system. They do not certify design quality, accessibility, correct behavior or complete compliance; human review remains necessary. These source-copy components render UI and callbacks; they do not call a model or provide an agent runtime.
+
+## AI implementation resources
+
+- [AI implementation guide](guides/ai-implementation-guide.md)
+- [11 implementation rules](rules/frame-rules.json)
+- [Design principles](https://system.beibeidesign.com/#principles)
+
+The rules describe partial, advisory and human-only coverage. They are not executable checker configuration, and this repository does not publish an installable checker.
 
 ## Components
 
@@ -68,4 +76,4 @@ Verified with shadcn 4.21.0 in clean React 19.2.5/Vite 8.0.10 apps using Tailwin
 
 ## License
 
-This exported collection is MIT licensed. See LICENSE and THIRD_PARTY_NOTICES.md.
+The exported components, AI implementation guide and implementation rules are MIT licensed. See LICENSE and THIRD_PARTY_NOTICES.md.
