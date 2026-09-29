@@ -8,9 +8,10 @@ The exported React component collection is open-source and MIT licensed. People 
 
 - [AI implementation guide](https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/main/guides/ai-implementation-guide.md)
 - [11 implementation rules](https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/main/rules/frame-rules.json)
+- [Portable checker and exact coverage](https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/main/checks/README.md)
 - [Design principles](https://system.beibeidesign.com/#principles)
 
-The rules are descriptive, not executable checker configuration. This repository does not publish an installable checker.
+The rules remain the descriptive source of truth. The optional portable checker implements only its declared FRAME-01–03 subsets and one narrow FRAME-06 advisory; a clean result is not certification.
 
 ## Catalog
 

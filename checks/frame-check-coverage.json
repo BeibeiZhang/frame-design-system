@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "checker": "frame-check",
+  "checkerVersion": "1.0.0",
+  "coverageVersion": "frame-check-1",
+  "scope": "Read-only AST checks for explicit JavaScript, JSX, TypeScript, and TSX files.",
+  "resultMeaning": "Exit 0 means only that the documented supported subset produced no findings. It is not Frame compliance, design-quality, accessibility, behavior, or visual certification.",
+  "tokenProfile": {
+    "version": "frame-check-1",
+    "utilities": [
+      "bg",
+      "text",
+      "border",
+      "ring",
+      "fill",
+      "stroke"
+    ],
+    "families": [
+      "text",
+      "bg",
+      "card",
+      "input",
+      "selected",
+      "stroke",
+      "focus",
+      "warning",
+      "error",
+      "accent",
+      "tooltip",
+      "overlay",
+      "progress",
+      "scrim",
+      "dataviz"
+    ]
+  },
+  "diagnostics": [
+    {
+      "id": "FRAME-01-COLOR-CLASS",
+      "ruleId": "FRAME-01",
+      "severity": "error",
+      "syntax": "Direct static JSX className values and value-producing conditional/logical branches: bracket-hex values and documented Tailwind palette classes.",
+      "falsePositiveBoundary": "Only exact documented class shapes in value-producing positions are reported; comparison operands and arbitrary helper-call arguments are not treated as class values.",
+      "falseNegativeBoundary": "Dynamic classes, helper return values, CSS files, alternate color syntax, token existence, generated CSS, themes, and contrast are not checked.",
+      "humanReview": "Verify semantic role, token availability, both themes, and rendered contrast."
+    },
+    {
+      "id": "FRAME-01-INLINE-STYLE",
+      "ruleId": "FRAME-01",
+      "severity": "error",
+      "syntax": "Direct properties in a JSX style object whose static color/background value begins with hex, rgb, or rgba syntax.",
+      "falsePositiveBoundary": "Only color or background* properties with those literal forms are reported.",
+      "falseNegativeBoundary": "Computed properties/values, aliases, CSS variables, hsl, nested spreads, CSS files, themes, and contrast are not checked.",
+      "humanReview": "Verify semantic role, token availability, both themes, and rendered contrast."
+    },
+    {
+      "id": "FRAME-02-RAW-TYPE-CLASS",
+      "ruleId": "FRAME-02",
+      "severity": "error",
+      "syntax": "Direct static JSX className values and value-producing conditional/logical branches: text/leading arbitrary px values and the documented native text/weight classes.",
+      "falsePositiveBoundary": "Only exact documented class shapes in value-producing positions are reported; comparison operands and arbitrary helper-call arguments are not treated as class values.",
+      "falseNegativeBoundary": "Dynamic classes, helper return values, other units, CSS overrides, non-class styles, and installed Frame type-tier availability are not checked.",
+      "humanReview": "Verify readable hierarchy, the intended Frame type tier, and responsive rendering."
+    },
+    {
+      "id": "FRAME-03-TOKEN-ALPHA",
+      "ruleId": "FRAME-03",
+      "severity": "error",
+      "syntax": "Direct static JSX className values and value-producing conditional/logical branches using numeric slash alpha on the versioned frame-check-1 utility/family profile.",
+      "falsePositiveBoundary": "Only documented Frame token-family prefixes followed by a numeric slash modifier in value-producing positions are reported; comparison operands and arbitrary helper-call arguments are excluded.",
+      "falseNegativeBoundary": "Dynamic classes, helper return values, unlisted future families, nonnumeric opacity syntax, and actual generated CSS are not checked.",
+      "humanReview": "Choose an explicit semantic token and verify contrast in both themes."
+    },
+    {
+      "id": "FRAME-06-UI-EMOJI",
+      "ruleId": "FRAME-06",
+      "severity": "advisory",
+      "syntax": "Emoji code points in a literal aria-label or literal text directly inside an intrinsic button element.",
+      "falsePositiveBoundary": "The advisory is restricted to two AST contexts that are unambiguously UI control labels.",
+      "falseNegativeBoundary": "Nested button content, generated labels, ordinary strings, message copy, comments, letter substitutes, non-Lucide libraries, inline SVG, and many Unicode sequences are not checked.",
+      "humanReview": "Confirm UI chrome uses lucide-react while preserving content and documented semantic exceptions."
+    }
+  ],
+  "rules": [
+    {
+      "id": "FRAME-01",
+      "coverage": "partial-error",
+      "diagnostics": [
+        "FRAME-01-COLOR-CLASS",
+        "FRAME-01-INLINE-STYLE"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "id": "FRAME-02",
+      "coverage": "partial-error",
+      "diagnostics": [
+        "FRAME-02-RAW-TYPE-CLASS"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "id": "FRAME-03",
+      "coverage": "partial-error",
+      "diagnostics": [
+        "FRAME-03-TOKEN-ALPHA"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "id": "FRAME-04",
+      "coverage": "human-only",
+      "diagnostics": [],
+      "humanReviewRequired": true
+    },
+    {
+      "id": "FRAME-05",
+      "coverage": "human-only",
+      "diagnostics": [],
+      "humanReviewRequired": true
+    },
+    {
+      "id": "FRAME-06",
+      "coverage": "advisory",
+      "diagnostics": [
+        "FRAME-06-UI-EMOJI"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "id": "FRAME-07",
+      "coverage": "human-only",
+      "diagnostics": [],
+      "humanReviewRequired": true
+    },
+    {
+      "id": "FRAME-08",
+      "coverage": "human-only",
+      "diagnostics": [],
+      "humanReviewRequired": true
+    },
+    {
+      "id": "FRAME-09",
+      "coverage": "human-only",
+      "diagnostics": [],
+      "humanReviewRequired": true
+    },
+    {
+      "id": "FRAME-10",
+      "coverage": "human-only",
+      "diagnostics": [],
+      "humanReviewRequired": true
+    },
+    {
+      "id": "FRAME-11",
+      "coverage": "human-only",
+      "diagnostics": [],
+      "humanReviewRequired": true
+    }
+  ],
+  "principles": [
+    { "id": "P1", "coverage": "human-reviewed-guidance" },
+    { "id": "P2", "coverage": "human-reviewed-guidance" },
+    { "id": "P3", "coverage": "human-reviewed-guidance" },
+    { "id": "P4", "coverage": "human-reviewed-guidance" },
+    { "id": "P5", "coverage": "human-reviewed-guidance" },
+    { "id": "P6", "coverage": "human-reviewed-guidance" },
+    { "id": "P7", "coverage": "human-reviewed-guidance" },
+    { "id": "P8", "coverage": "human-reviewed-guidance" },
+    { "id": "P9", "coverage": "human-reviewed-guidance" },
+    { "id": "P10", "coverage": "human-reviewed-guidance" },
+    { "id": "P11", "coverage": "human-reviewed-guidance" },
+    { "id": "P12", "coverage": "human-reviewed-guidance" },
+    { "id": "P13", "coverage": "human-reviewed-guidance" }
+  ]
+}

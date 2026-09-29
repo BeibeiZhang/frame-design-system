@@ -10,9 +10,10 @@ An elegant design language and clear structure let the product speak for itself.
 
 - [AI implementation guide](guides/ai-implementation-guide.md)
 - [11 implementation rules](rules/frame-rules.json)
+- [Portable checker and exact coverage](checks/README.md)
 - [Design principles](https://system.beibeidesign.com/#principles)
 
-The rules describe partial, advisory and human-only coverage. They are not executable checker configuration, and this repository does not publish an installable checker.
+The rules distinguish partial, advisory and human-only coverage. The optional portable checker implements only the declared FRAME-01–03 subsets and one narrow FRAME-06 advisory; a clean result is not certification.
 
 ## Components
 
@@ -76,4 +77,4 @@ Verified with shadcn 4.21.0 in clean React 19.2.5/Vite 8.0.10 apps using Tailwin
 
 ## License
 
-The exported components, AI implementation guide and implementation rules are MIT licensed. See LICENSE and THIRD_PARTY_NOTICES.md.
+The exported components, AI implementation guide, implementation rules and portable checker are MIT licensed. See LICENSE and THIRD_PARTY_NOTICES.md.
