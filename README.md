@@ -8,9 +8,10 @@ An elegant design language and clear structure let the product speak for itself.
 
 ## AI implementation resources
 
+- [Build without a plugin](guides/getting-started.md)
+- [Portable checker and exact coverage](checks/README.md)
 - [AI implementation guide](guides/ai-implementation-guide.md)
 - [11 implementation rules](rules/frame-rules.json)
-- [Portable checker and exact coverage](checks/README.md)
 - [Design principles](https://system.beibeidesign.com/#principles)
 
 The rules distinguish partial, advisory and human-only coverage. The optional portable checker implements only the declared FRAME-01–03 subsets and one narrow FRAME-06 advisory; a clean result is not certification.
