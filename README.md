@@ -79,3 +79,18 @@ Verified with shadcn 4.21.0 in clean React 19.2.5/Vite 8.0.10 apps using Tailwin
 ## License
 
 The exported components, AI implementation guide, implementation rules and portable checker are MIT licensed. See LICENSE and THIRD_PARTY_NOTICES.md.
+
+## Install with the @frame namespace
+
+```sh
+npx shadcn@latest add @frame/chat-input
+npx shadcn@latest add @frame/frame
+```
+
+Before Frame is included in the official shadcn Registry Directory, add this entry to the registries object in components.json:
+
+```json
+{ "registries": { "@frame": "https://system.beibeidesign.com/r/{name}.json" } }
+```
+
+Merge this entry into your existing configuration. The flat registry index is https://system.beibeidesign.com/r/registry.json. Once the official directory includes @frame, the CLI resolves the namespace automatically. The raw GitHub URL commands above remain available as a fallback.

@@ -47,3 +47,18 @@ The rules remain the descriptive source of truth. The optional portable checker 
 - [VersionRow](https://github.com/BeibeiZhang/frame-design-system/blob/main/components/version-row.tsx): Version comparison and update-status presentation without a network or update client. [Example](https://github.com/BeibeiZhang/frame-design-system/blob/main/examples/version-row.tsx). [Viewer](https://system.beibeidesign.com/#version-row).
 
 Citation and tool transparency are design guidance, not installable components in this collection.
+
+## Install with the @frame namespace
+
+```sh
+npx shadcn@latest add @frame/chat-input
+npx shadcn@latest add @frame/frame
+```
+
+Before Frame is included in the official shadcn Registry Directory, add this entry to the registries object in components.json:
+
+```json
+{ "registries": { "@frame": "https://system.beibeidesign.com/r/{name}.json" } }
+```
+
+Merge this entry into your existing configuration. The flat registry index is https://system.beibeidesign.com/r/registry.json. Once the official directory includes @frame, the CLI resolves the namespace automatically. The raw GitHub URL install address https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/main/registry/frame.json remain available as a fallback.
