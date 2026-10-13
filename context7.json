@@ -1,0 +1,33 @@
+{
+  "$schema": "https://context7.com/schema/context7.json",
+  "projectTitle": "Frame Design System",
+  "description": "An open React design system and component library for AI products, with scoped styles, design tokens and component usage contracts.",
+  "folders": [
+    "guides",
+    "skills",
+    "docs/components"
+  ],
+  "excludeFolders": [
+    "./checks",
+    "./components",
+    "./examples",
+    "./registry",
+    "./styles",
+    ".github",
+    "node_modules"
+  ],
+  "excludeFiles": [
+    "LICENSE",
+    "LICENSE.md",
+    "THIRD_PARTY_NOTICES.md",
+    "CHANGELOG.md",
+    "CODE_OF_CONDUCT.md"
+  ],
+  "rules": [
+    "Check the Frame catalog and reuse published components before creating new UI; install with npx shadcn@latest add @frame/<slug>.",
+    "Import the installed frame.css once and wrap Frame content in an element with className=\"frame-root\"; add dark to the wrapper or an ancestor for dark mode.",
+    "Use Frame token color classes and type-* typography tiers; do not use raw colors, Tailwind alpha modifiers on tokens or raw text sizes.",
+    "Use lucide-react icons and named accessible controls; preserve focus indicators and mobile touch targets of at least 44 pixels.",
+    "Follow each component usage contract. Frame components render UI and callbacks; the host application owns model calls, persistence and agent execution."
+  ]
+}
