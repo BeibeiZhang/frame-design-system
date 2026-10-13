@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "pluginVersion": "0.1.4",
+  "generatedFromPublicCommit": "125a6f6d993851f567b32578a4f6e48515930337",
+  "generatedFromPublicTree": "05cf4cdfface969115e2c4b0c376a0515ace4f01",
+  "generatedAtSourceDate": "2026-09-29",
+  "references": {
+    "implementation-guide.md": {
+      "sha256": "a6a78b90aed8e94bc7f178a61373c671ed8f3b321ab3fb0b2eb9c2d80d006fee"
+    },
+    "frame-rules.json": {
+      "sha256": "cb99e417f3f083a2cfec8de610e343efba4f9981f7220b7355b5a7ba1704613e"
+    },
+    "frame-check-coverage.json": {
+      "sha256": "d8fe6fbd5b899debf09b240b23e7083ae988b0e2c417ffd66104620cb1e2651b"
+    },
+    "portable-checker.md": {
+      "sha256": "698600e308c48f26b9d15c43872067ee13dab616cd9e38bd81156263dee7dc98"
+    },
+    "principles.md": {
+      "sha256": "4ddcc5cdb70959533d95efb9e34e3530d2ff62709fbc52033f5b8dd0cba964a6"
+    },
+    "components.md": {
+      "sha256": "ac9894c3c4df37e1f4a131ed7beff2666904af9740ebccedf8ac44b871c7e5f3"
+    },
+    "ai-patterns.md": {
+      "sha256": "88ddc0c3ff5a091416da7f3d3ad41c8025a2ed4cd0b8cbd43c10b3c30b75aa82"
+    },
+    "real-products.md": {
+      "sha256": "0f53151cfc83ef6eaeffe564215b836714b342eaa099a212b45e7d6f14c93d10"
+    }
+  },
+  "sources": {
+    "guide": {
+      "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/main/guides/ai-implementation-guide.md",
+      "sha256": "a6a78b90aed8e94bc7f178a61373c671ed8f3b321ab3fb0b2eb9c2d80d006fee"
+    },
+    "rules": {
+      "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/main/rules/frame-rules.json",
+      "sha256": "cb99e417f3f083a2cfec8de610e343efba4f9981f7220b7355b5a7ba1704613e"
+    },
+    "checker": {
+      "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/main/checks/frame-check.mjs",
+      "sha256": "2cb4c89a2a5ba92b57ed9a410d19088c5c98126a0951c13bd3c3ebcd3280d997"
+    },
+    "coverage": {
+      "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/main/checks/frame-check-coverage.json",
+      "sha256": "425e8c15be771b6fb303702e40f966327cd8c2baaa6a4f1e27dc82776cc8a086"
+    }
+  },
+  "provenanceNotes": [
+    "The implementation-guide.md snapshot is byte-identical to the pinned public guide. That revision predates DS-134 and says no installable checker is published; the later checker release is described separately in portable-checker.md and frame-check-coverage.json."
+  ],
+  "canonicalLinks": {
+    "principles": "https://system.beibeidesign.com/#principles",
+    "components": "https://system.beibeidesign.com/#buttons",
+    "patterns": "https://system.beibeidesign.com/ai-interaction-patterns/",
+    "realProducts": "https://system.beibeidesign.com/#operating-guide",
+    "websiteKnowledge": "https://system.beibeidesign.com/llms.txt",
+    "publicRepository": "https://github.com/BeibeiZhang/frame-design-system"
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "status": "public",
+  "scope": "Frame-styled React interfaces; validate against the selected released component and style set.",
+  "execution": "Descriptive rules, not executable configuration or an installed checker.",
+  "sourceMapping": "Constraint IDs map to the 11 implementation constraints in the public AI implementation guide; principle IDs map to the public Frame design principles.",
+  "severityMeaning": "Requirement severity is distinct from automation: advisory emits warnings, human-only has no machine enforcement, partial-error catches selected patterns only.",
+  "rules": [
+    {
+      "id": "FRAME-01",
+      "title": "Token colors",
+      "severity": "error",
+      "requirement": "Use semantic token classes for UI colors.",
+      "automation": "partial-error",
+      "checks": "Selected bracket-hex, palette and same-line inline style literals.",
+      "cannotCheck": "Computed values, alternate syntax, contrast and token existence.",
+      "examples": {
+        "conforming": "text-text-primary",
+        "nonconforming": "text-[#142740]"
+      },
+      "humanReview": "Verify theme and semantic meaning.",
+      "source": {
+        "implementationConstraint": 1,
+        "principles": [
+          2
+        ]
+      }
+    },
+    {
+      "id": "FRAME-02",
+      "title": "Typography",
+      "severity": "error",
+      "requirement": "Use available Frame type-* styles.",
+      "automation": "partial-error",
+      "checks": "Selected px text/leading and native type/weight classes.",
+      "cannotCheck": "Other units, dynamic classes, CSS overrides and installed style availability.",
+      "examples": {
+        "conforming": "type-detail",
+        "nonconforming": "text-sm"
+      },
+      "humanReview": "Inspect readable hierarchy at each viewport.",
+      "source": {
+        "implementationConstraint": 2,
+        "principles": [
+          7
+        ]
+      }
+    },
+    {
+      "id": "FRAME-03",
+      "title": "Token alpha",
+      "severity": "error",
+      "requirement": "Choose an explicit semantic token instead of numeric slash alpha.",
+      "automation": "partial-error",
+      "checks": "Numeric slash alpha on fixed Frame token-family prefixes.",
+      "cannotCheck": "Arbitrary alpha syntax, new prefixes and actual generated CSS.",
+      "examples": {
+        "conforming": "text-text-secondary",
+        "nonconforming": "text-text-primary/60"
+      },
+      "humanReview": "Inspect intended opacity and contrast in both themes.",
+      "source": {
+        "implementationConstraint": 3,
+        "principles": [
+          2,
+          9
+        ]
+      }
+    },
+    {
+      "id": "FRAME-04",
+      "title": "Surface separation",
+      "severity": "error",
+      "requirement": "Use fill or border on a card/panel; dashed placeholders may use both.",
+      "automation": "human-only",
+      "checks": "No current automated check.",
+      "cannotCheck": "Surface semantics, nested layers and visual hierarchy.",
+      "examples": {
+        "conforming": "bg-bg-hover rounded-xl",
+        "nonconforming": "bg-bg-hover border border-stroke-outline"
+      },
+      "humanReview": "Decide whether a dashed border communicates a placeholder.",
+      "source": {
+        "implementationConstraint": 4,
+        "principles": [
+          12
+        ]
+      }
+    },
+    {
+      "id": "FRAME-05",
+      "title": "Shared composition",
+      "severity": "error",
+      "requirement": "Reuse and compose released primitives before creating shared extensions.",
+      "automation": "human-only",
+      "checks": "No current automated check.",
+      "cannotCheck": "Component availability, duplicated behavior and dependency closure.",
+      "examples": {
+        "conforming": "Compose an available StatusTag",
+        "nonconforming": "Copy the StatusTag implementation into each page"
+      },
+      "humanReview": "Review the consumer shared module and extension contract.",
+      "source": {
+        "implementationConstraint": 5,
+        "principles": [
+          1,
+          11
+        ]
+      }
+    },
+    {
+      "id": "FRAME-06",
+      "title": "UI icons",
+      "severity": "error",
+      "requirement": "Use lucide-react for chrome; do not use emoji, letters or inline SVG as icon substitutes.",
+      "automation": "partial-error",
+      "checks": "Selected emoji codepoints/escapes/entities with comment heuristics in current scoped files.",
+      "cannotCheck": "Other libraries, inline SVG, letter substitutes, generated-message semantics and all Unicode emoji sequences.",
+      "examples": {
+        "conforming": "<Search /> from lucide-react",
+        "nonconforming": "<button>😀</button>"
+      },
+      "humanReview": "Separate UI chrome from generated message copy; review semantic exceptions.",
+      "source": {
+        "implementationConstraint": 6,
+        "principles": [
+          8
+        ]
+      }
+    },
+    {
+      "id": "FRAME-07",
+      "title": "Media controls",
+      "severity": "error",
+      "requirement": "Use available overlay/inverted IconButton tones over media; light backplates need dark glyphs.",
+      "automation": "human-only",
+      "checks": "No current automated check.",
+      "cannotCheck": "Rendered contrast across variable media and themes.",
+      "examples": {
+        "conforming": "IconButton tone=\"inverted\" with its dark glyph",
+        "nonconforming": "White glyph on a white media backplate"
+      },
+      "humanReview": "Inspect real media, focus and both themes.",
+      "source": {
+        "implementationConstraint": 7,
+        "principles": [
+          9
+        ]
+      }
+    },
+    {
+      "id": "FRAME-08",
+      "title": "Gradient roles",
+      "severity": "error",
+      "requirement": "Use available brand-gradient for backdrops and gradient-btn for buttons.",
+      "automation": "human-only",
+      "checks": "No current automated check.",
+      "cannotCheck": "Installed utility availability, CSS descendants and visual budget.",
+      "examples": {
+        "conforming": "brand-gradient backdrop",
+        "nonconforming": "gradient-btn passive panel"
+      },
+      "humanReview": "Review scarce gradient use and descendant glyph contrast.",
+      "source": {
+        "implementationConstraint": 8,
+        "principles": [
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "id": "FRAME-09",
+      "title": "Mobile targets",
+      "severity": "error",
+      "requirement": "Provide effective mobile touch bounds of at least 44 by 44 CSS pixels.",
+      "automation": "advisory",
+      "checks": "Small same-line IconButton and added a/button inferred vertical-floor warnings.",
+      "cannotCheck": "Width, actual layout, CSS conflicts, multiline props and unchanged opening tags.",
+      "examples": {
+        "conforming": "Measured 44 by 44 effective hit area",
+        "nonconforming": "Bare IconButton size={24} on mobile"
+      },
+      "humanReview": "Measure actual bounds and spacing; warnings are not enforcement.",
+      "source": {
+        "implementationConstraint": 9,
+        "principles": []
+      }
+    },
+    {
+      "id": "FRAME-10",
+      "title": "Keyboard focus",
+      "severity": "error",
+      "requirement": "Preserve visible focus; provide a replacement when overriding global focus.",
+      "automation": "human-only",
+      "checks": "No current automated check.",
+      "cannotCheck": "Keyboard reachability, focus visibility, clipping and media contrast.",
+      "examples": {
+        "conforming": "Visible focus-visible ring",
+        "nonconforming": "focus-visible:outline-none with no replacement"
+      },
+      "humanReview": "Exercise keyboard navigation and dismissal in context.",
+      "source": {
+        "implementationConstraint": 10,
+        "principles": []
+      }
+    },
+    {
+      "id": "FRAME-11",
+      "title": "Accessible identity and state",
+      "severity": "error",
+      "requirement": "Name icon-only controls and expose matching selected/pressed states.",
+      "automation": "human-only",
+      "checks": "No current automated check.",
+      "cannotCheck": "Accessible tree, label-in-name, dynamic announcements and actual behavior.",
+      "examples": {
+        "conforming": "IconButton ariaLabel=\"Close\"",
+        "nonconforming": "Unnamed icon-only button"
+      },
+      "humanReview": "Check rendered names; preserve visible labels and control identity when adding reasons.",
+      "source": {
+        "implementationConstraint": 11,
+        "principles": []
+      }
+    }
+  ]
+}

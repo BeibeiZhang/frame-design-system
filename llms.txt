@@ -67,3 +67,13 @@ Merge this entry into your existing configuration. The flat registry index is ht
 
 - [Component contracts and examples](https://github.com/BeibeiZhang/frame-design-system/tree/main/docs/components): Exact released props, callbacks, defaults, install requirements and host responsibilities for 23 components.
 - [Machine-readable component index](https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/main/docs/components/index.json): Source-bound API contracts and minimal examples.
+
+## Install agent skills
+
+Install Design with Frame and Audit with Frame in supported coding agents (including Claude Code, Codex, and Cursor):
+
+```sh
+npx skills add BeibeiZhang/frame-design-system
+```
+
+Skill source: https://github.com/BeibeiZhang/frame-design-system/tree/main/skills
