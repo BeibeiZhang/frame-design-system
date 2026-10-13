@@ -1,0 +1,4153 @@
+{
+  "schemaVersion": 1,
+  "releasedSource": {
+    "repository": "BeibeiZhang/frame-design-system",
+    "commit": "125a6f6d993851f567b32578a4f6e48515930337",
+    "tree": "05cf4cdfface969115e2c4b0c376a0515ace4f01",
+    "inputs": [
+      {
+        "path": "LICENSE",
+        "mode": "100644",
+        "gitBlob": "4dfcba07f2c92f86afff09c4f515214eb312a27d",
+        "sha256": "0464d99a47b4857aa1735302e7f256113f14f8aee8b5324d2330e023306407fe"
+      },
+      {
+        "path": "README.md",
+        "mode": "100644",
+        "gitBlob": "37269e692a4fe66bb269a6b2d35af027edf3005b",
+        "sha256": "71488e3cdd8b3e96a48aaf8fd79b2e20d19d5a41fe76653eafd75d8e5d3996cf"
+      },
+      {
+        "path": "THIRD_PARTY_NOTICES.md",
+        "mode": "100644",
+        "gitBlob": "9a9e564eca624f5815b8a43966ce55ebf7051036",
+        "sha256": "642a96a7d9d4cfcf42fcbe9ca5a351761f4ef34926fc9423e643f8c38e1fa68b"
+      },
+      {
+        "path": "checks/README.md",
+        "mode": "100644",
+        "gitBlob": "c6fcfea38be73a5d4d0def0bf2dc0867ce3c0f18",
+        "sha256": "82b0d4addee38ec9eae50649dfc111832eebe3aeb56b0f79d268ced64e6aa5eb"
+      },
+      {
+        "path": "checks/fixtures/class-value-negative.tsx",
+        "mode": "100644",
+        "gitBlob": "b63c46dedfc85b9de230f42cdb2c1941e5260190",
+        "sha256": "7f0d5157c00d9df4685708ef5188ff80dd6abc73b10c019e3299a8330d9556a2"
+      },
+      {
+        "path": "checks/fixtures/class-value-positive.tsx",
+        "mode": "100644",
+        "gitBlob": "edc70612d7a3c5a4d7c31f659e367ebd8a8821ef",
+        "sha256": "8e15873dcd470c059c21821a4d3b041a162314a81b3f9d65c5b9d6023ea9a39f"
+      },
+      {
+        "path": "checks/fixtures/clean.tsx",
+        "mode": "100644",
+        "gitBlob": "8505d07a7607f75b0776314f3ec8dd2e5bf7d6fd",
+        "sha256": "e9bb242bd47b082823090dfeb878a9009d37b69a4d17ffb80a7950cbbaa5fadb"
+      },
+      {
+        "path": "checks/fixtures/comments-and-strings.ts",
+        "mode": "100644",
+        "gitBlob": "11f77d6006bda5de810eac289a733f094aebd157",
+        "sha256": "2b730599af938d2ea6065074519f67ea5c9d2c7601b9f7c22b1414a74910ee6e"
+      },
+      {
+        "path": "checks/fixtures/crlf-button-emoji.tsx",
+        "mode": "100644",
+        "gitBlob": "ed408cad7f163a3fa667f993f03fbcaddc332c7e",
+        "sha256": "1f3e84222bb0c8720eefbae713ef237f13b6efb9c38424742cb0d075fc40bdf3"
+      },
+      {
+        "path": "checks/fixtures/current-decorators.tsx",
+        "mode": "100644",
+        "gitBlob": "bd20a9a605d2f2210ff062fe887b1242d31ff077",
+        "sha256": "d9cd28fceb5a5f0187b1e501d294985efeb956d45a849db5584dca8fdddfee66"
+      },
+      {
+        "path": "checks/fixtures/emoji-advisory.tsx",
+        "mode": "100644",
+        "gitBlob": "967a763a3d5db065d0dea50484fead8ef33d0394",
+        "sha256": "76d182dd5b44a681c16c61e5ce062a47ee21740b018c96da3880c411bf0b4931"
+      },
+      {
+        "path": "checks/fixtures/escaped-locations.tsx",
+        "mode": "100644",
+        "gitBlob": "a25f544a0bb8e4c8fd63472baff26dd21157d1fa",
+        "sha256": "d1a8765b984be879d61b272cb654fea9f8494736ff9b9633957eb9171ed03f91"
+      },
+      {
+        "path": "checks/fixtures/generated-content.tsx",
+        "mode": "100644",
+        "gitBlob": "b26ac9ab0bba9374882e4f72663e46524d08d3bb",
+        "sha256": "26c4f0d8ac63a58fd160d0e7f75948e7ad5b98b44ab946c8b7764c66b7e1f779"
+      },
+      {
+        "path": "checks/fixtures/legacy-decorators.ts",
+        "mode": "100644",
+        "gitBlob": "a1e9192551c8b17e38d97a548ba39b241874908e",
+        "sha256": "566f782bae7e7484bdb73fb18a1bf084a09ab6d5a98493fa4aadc54b3721920c"
+      },
+      {
+        "path": "checks/fixtures/malformed.tsx",
+        "mode": "100644",
+        "gitBlob": "e3c43df39d7cf4eaea640020129d10d322499146",
+        "sha256": "fb3083066521588ff2aee5f1884b93be72641cdc69b16f77f53fe1588699e1c0"
+      },
+      {
+        "path": "checks/fixtures/mixed.js",
+        "mode": "100644",
+        "gitBlob": "247ba6ec7170fb972756663a562c8ff959dc2d26",
+        "sha256": "fd842318d73f1c9adf4b75fff2446df8d9559061862955fd13767ae061fc85cb"
+      },
+      {
+        "path": "checks/fixtures/mixed.jsx",
+        "mode": "100644",
+        "gitBlob": "03ac0c1644aa4666ce7c84675c0faa3eb7d1c358",
+        "sha256": "345fec5d0b310fde8a998a1ae5be9144381e3abc5c2d49c17e08605755410f23"
+      },
+      {
+        "path": "checks/fixtures/mixed.ts",
+        "mode": "100644",
+        "gitBlob": "5cfe2f8751717f609d8ec4e8e1e3f11e56c252f2",
+        "sha256": "c0649b726da08b5ab9bc7da7714a75ae2f07b4ebf510d31ffa922295938bf35f"
+      },
+      {
+        "path": "checks/fixtures/mixed.tsx",
+        "mode": "100644",
+        "gitBlob": "8b72a82decfbd8841d7c89b5c3a9bc444c69335a",
+        "sha256": "eb470726360a7a324be742c68acc4cfb3b362a15d289be6b1c82ec732ac4299c"
+      },
+      {
+        "path": "checks/fixtures/path with spaces.tsx",
+        "mode": "100644",
+        "gitBlob": "3454c53732123971502c9609a7c5d80a8d89be0b",
+        "sha256": "cd8e244d50eb4c6903a289080d8eb7d2f7d77dbb4ad7ba5da28720f84de12699"
+      },
+      {
+        "path": "checks/fixtures/satisfies-clean.tsx",
+        "mode": "100644",
+        "gitBlob": "d0e770a0fd0354e25ddd9ba819563366e1ec10e1",
+        "sha256": "48debf2ec3c465062291908cc314e8350a97f4ed04b60934246c79d8d842a3d2"
+      },
+      {
+        "path": "checks/fixtures/satisfies-values.tsx",
+        "mode": "100644",
+        "gitBlob": "a14a33bfafbe31e1afbb39e319b48bbb1d1e98cc",
+        "sha256": "9800520e146e8ba48002800b3eacf5a024b9b79fdd2b1c126cf7adb9d7f88396"
+      },
+      {
+        "path": "checks/fixtures/violations.tsx",
+        "mode": "100644",
+        "gitBlob": "df64eb89c10e806c795e6f2a075eac6c7c50f1fb",
+        "sha256": "b73dd584a545a0381481a7e45113bcb0a5726d667c1668ab186531363c878cc7"
+      },
+      {
+        "path": "checks/frame-check-coverage.json",
+        "mode": "100644",
+        "gitBlob": "baa6135a91f84c6afeea2679a9cd295f34dfa99e",
+        "sha256": "425e8c15be771b6fb303702e40f966327cd8c2baaa6a4f1e27dc82776cc8a086"
+      },
+      {
+        "path": "checks/frame-check.mjs",
+        "mode": "100644",
+        "gitBlob": "8d29b7b7215fc33ab20900696f540501eb9f131c",
+        "sha256": "2cb4c89a2a5ba92b57ed9a410d19088c5c98126a0951c13bd3c3ebcd3280d997"
+      },
+      {
+        "path": "checks/package-lock.json",
+        "mode": "100644",
+        "gitBlob": "63ebf2fa9a310b2515a681e7b9e873b4643c2f32",
+        "sha256": "1f0330032f856f040203903ed8232a340f841a9890216d531cdd6f775bf73333"
+      },
+      {
+        "path": "checks/package.json",
+        "mode": "100644",
+        "gitBlob": "f2736bd4cd21527b28074e3102e1d3337f9cbf5a",
+        "sha256": "6e56d9f51b77d7e19b455bbdf90f6467837e33bb35b519a41e9cd35eb6cb084a"
+      },
+      {
+        "path": "components/chat-input.tsx",
+        "mode": "100644",
+        "gitBlob": "fc4255e88bee635bc44a309277f24902921b3d6a",
+        "sha256": "364e5a0666b02be19265a7552791a7a696f16a676033d307a2d8f69582e42b6d"
+      },
+      {
+        "path": "components/chat-message.tsx",
+        "mode": "100644",
+        "gitBlob": "ba1df2a05bd829b1f8ed70e160ca02e1113ba580",
+        "sha256": "fb939684699b9b6cb8574a562a641c512cc29b969ce84ad56f264d857a06d278"
+      },
+      {
+        "path": "components/chat-panel.tsx",
+        "mode": "100644",
+        "gitBlob": "88d0737d1a1f6f855b529cf4b11091700c781f0b",
+        "sha256": "5d2aec84e46811960968c898091e8566c73d3ee27ec10697406c50633b899d74"
+      },
+      {
+        "path": "components/choice-card.tsx",
+        "mode": "100644",
+        "gitBlob": "e297601793b80f5f5c1412863ffb59699bd00ee5",
+        "sha256": "c64bcb9d7a82df668d7d451384904689682e7158e977b826f725f54245e3ccb5"
+      },
+      {
+        "path": "components/empty-state.tsx",
+        "mode": "100644",
+        "gitBlob": "c4c960db820b915033afff04ee0b9d53122f4c69",
+        "sha256": "16f520583d4b61f9479dd0d1635dfda280c51e440b4f3185e44a497c8a2a1668"
+      },
+      {
+        "path": "components/ghost-pill-button.tsx",
+        "mode": "100644",
+        "gitBlob": "b152b2715373a98d1f41092d4394ba28f4e4e4b0",
+        "sha256": "6c539cf4057a2f2d9ce65966ca8c4945007cbca69dbb98848dc0662ef33bce6c"
+      },
+      {
+        "path": "components/header-icon-button.tsx",
+        "mode": "100644",
+        "gitBlob": "c5dc80814f1ff3375827520ad30e3afe6063a051",
+        "sha256": "3d494fbf2fc21b6884bc388fa8ff65de726c9c0b96c74805318c8c01909f6209"
+      },
+      {
+        "path": "components/icon-badge.tsx",
+        "mode": "100644",
+        "gitBlob": "661f336a66037de4008aa2ff19d787aa0e5586c4",
+        "sha256": "da1b64e9a8d9f4dde79630bdfdc45394f0e79863aafca7f9e73b9e0d6e1597b7"
+      },
+      {
+        "path": "components/menu-row.tsx",
+        "mode": "100644",
+        "gitBlob": "2cbdd0f4d95aff00fab625c76521a8336d2ef4c6",
+        "sha256": "2bbc89c7eeaf70b275c4968fd29a8f26667e60ad00df8359a82895acb793f189"
+      },
+      {
+        "path": "components/message-card.tsx",
+        "mode": "100644",
+        "gitBlob": "b3aa10e08f910cbf68bb1162148cea52c40fff04",
+        "sha256": "c6f620afbc58e9c398456157261cfdd940696c01ca9c6dfef50ec5247fd25dc8"
+      },
+      {
+        "path": "components/review-item-card.tsx",
+        "mode": "100644",
+        "gitBlob": "97338a92969aa189dafe819bd4175e205ece8b23",
+        "sha256": "ae3cf9f7b75892c918d2711a046740a019a0057cc4f3350afb60f15529bfbfe6"
+      },
+      {
+        "path": "components/secondary-button.tsx",
+        "mode": "100644",
+        "gitBlob": "91c9842efca494339c0488254fb062bcf1e4ca3e",
+        "sha256": "29cb885cacd0e6621a16acb9a24e8e5268b40fee01ab49f5444296a24479a418"
+      },
+      {
+        "path": "components/section-count.tsx",
+        "mode": "100644",
+        "gitBlob": "c0fb6955a507f431c75105340a85c3fef105b878",
+        "sha256": "64c15ed8d9c8fb5f020fabf91454cdbd59ccf344c2bc4a1d4defb4c015d9daee"
+      },
+      {
+        "path": "components/side-panel-body.tsx",
+        "mode": "100644",
+        "gitBlob": "9d8896e82a28ec8ae07f68440e561fa5f2e57f71",
+        "sha256": "af84757f0b9c9a1910a6241b31794742f7d3cc7ae8d37d88111fc6c4e8c33213"
+      },
+      {
+        "path": "components/status-tag.tsx",
+        "mode": "100644",
+        "gitBlob": "d7567aab2d3ec40a82288d533067ad1a33f0c3dd",
+        "sha256": "6a3831e96ce1e2bfb2f9466f399c644583dcfae8e665317f540110eb50178040"
+      },
+      {
+        "path": "components/step-indicator.tsx",
+        "mode": "100644",
+        "gitBlob": "4a25b742141b8062968f6b475e48a13a5cd15624",
+        "sha256": "99fd1005b7ab5bc79bac828d2e3f1a3e798930241e9006ebc93ff99660f9eca6"
+      },
+      {
+        "path": "components/summary-footer.tsx",
+        "mode": "100644",
+        "gitBlob": "aec5e58abeded7c339d9ecdd71ae034792e964f6",
+        "sha256": "bf4f93b77c82f2d9956e02dcae32f3e4018ffb8aa90cfded2632d0c5a434c7aa"
+      },
+      {
+        "path": "components/tag.tsx",
+        "mode": "100644",
+        "gitBlob": "5a7560155b95353ad79138dd6416939dc2f15f8e",
+        "sha256": "6e8b3a28214a79246e080108b09fd84ae4e556ddb83fbbc1a1537258906077e9"
+      },
+      {
+        "path": "components/tertiary-button.tsx",
+        "mode": "100644",
+        "gitBlob": "408dd738e45b505eef28e660e1e9996f442f0626",
+        "sha256": "6e61f29ad19a00b345bfc93c6675cd8449801daf4de1fc3930be9927218d0cf4"
+      },
+      {
+        "path": "components/text-button.tsx",
+        "mode": "100644",
+        "gitBlob": "55ac084b6ce7b97d3398cdc97ae2d3192251e821",
+        "sha256": "6fb38b82fc1bfe6d3b850416b860ff419cf396fe7a3387f7596056f9e1a577f1"
+      },
+      {
+        "path": "components/time-pill.tsx",
+        "mode": "100644",
+        "gitBlob": "0d87f9f108a4ffb82088b17b021c048afe7d3f6f",
+        "sha256": "fb9bc81dcfd364239a6a9655f12b0bed672727a24256faeda1ecfa108dfa6fb7"
+      },
+      {
+        "path": "components/utility-chip.tsx",
+        "mode": "100644",
+        "gitBlob": "5d5cd6c4a9b4b9316672f41920b792c65aca6b3b",
+        "sha256": "eead1a3c18f80ef39d017e8c4eff510420ed997fe22d776ddc9f9bdc52d84a0f"
+      },
+      {
+        "path": "components/version-row.tsx",
+        "mode": "100644",
+        "gitBlob": "53ffcf472b21445018ce67382b8fb0b01e6af5b4",
+        "sha256": "72ea0d821524367454844cb5b85b43b75fdad3aa479cf32bebe80a2595d90267"
+      },
+      {
+        "path": "examples/chat-input.tsx",
+        "mode": "100644",
+        "gitBlob": "436dd27e616bb9ffd473f963e0a3509c97f99e48",
+        "sha256": "a3d4e619cf20f93d167b97072ee093402efc99a97437b8179cd2ad870ecfdcf9"
+      },
+      {
+        "path": "examples/chat-message.tsx",
+        "mode": "100644",
+        "gitBlob": "bd654ef169e72ee06fe7f8ee476498471afe3768",
+        "sha256": "49cf10c2e60f83eebecf6128fa2bbfd57161e2f22242dd13a5bc5f934faa31a4"
+      },
+      {
+        "path": "examples/chat-panel.tsx",
+        "mode": "100644",
+        "gitBlob": "9ed9eef3755dbf151373cb846c7b37d76e50d958",
+        "sha256": "d1f605dd13331b198b18d381cecf40c83abb361baf8bd0336747044bca38d2a8"
+      },
+      {
+        "path": "examples/choice-card.tsx",
+        "mode": "100644",
+        "gitBlob": "1d7506162b3291ac19c8aa7c88d18a4edb015e28",
+        "sha256": "604bd5a7c6e590507f899b4b3b7d20e8b9136ea053a1c4cbe183fb5f1518967f"
+      },
+      {
+        "path": "examples/empty-state.tsx",
+        "mode": "100644",
+        "gitBlob": "70ac6e7ce65f7d7c6d98b7f939b20a99308feb4c",
+        "sha256": "df40680cba999221e25223cb388da69b326c850ced5790eefe88c7a36c92ef6c"
+      },
+      {
+        "path": "examples/ghost-pill-button.tsx",
+        "mode": "100644",
+        "gitBlob": "6946ae1e7ef8e61fea98ae47f29d8381e7f7b10d",
+        "sha256": "3ae79baba695dffa92e68c854ff89b05380d16cb34c52bb7cc98432b0fed52cb"
+      },
+      {
+        "path": "examples/header-icon-button.tsx",
+        "mode": "100644",
+        "gitBlob": "b3ffd675ca6dd1d0eacec73ea751d8d462c20079",
+        "sha256": "a517cb9959bad2d88de2a26d43f752575d0f555dfced81b532bc45c7074e8ebb"
+      },
+      {
+        "path": "examples/icon-badge.tsx",
+        "mode": "100644",
+        "gitBlob": "6dfcfd65256286c4ac08c553a269aa178d239f88",
+        "sha256": "252f88f6dae1d4840a5ba4e6b59b013818bb65526a91201be1ce52c1fe1383a8"
+      },
+      {
+        "path": "examples/menu-row.tsx",
+        "mode": "100644",
+        "gitBlob": "1a5a664f1c1053bee09a128f76d81a17178a52f0",
+        "sha256": "afd7521c0254e1aee9916c4f36b38a3479bf7346b6a3017d295dba1da60b4800"
+      },
+      {
+        "path": "examples/message-card.tsx",
+        "mode": "100644",
+        "gitBlob": "3d7797f1a0c8116a0da7ff4d9df72e67b317f56e",
+        "sha256": "5f6645a845f9d6772747b5913dca7e52c37969ffb10c5f1e6d19a2a4642a67a2"
+      },
+      {
+        "path": "examples/review-item-card.tsx",
+        "mode": "100644",
+        "gitBlob": "3767a7951800d794274f67b07cc5cd7ebfd94cd1",
+        "sha256": "2ed3f37616104ee0b254b5f8cdded75d6f488d8c3d40291fd0fcf6a8ead19c8e"
+      },
+      {
+        "path": "examples/secondary-button.tsx",
+        "mode": "100644",
+        "gitBlob": "fc17d18d5566ee3a1ba6f7dc731208dc28cfc9b1",
+        "sha256": "f6c71ad8b7e3ab13885606fa9b8649efcb563dc7f781b702c4804c4de6840ecb"
+      },
+      {
+        "path": "examples/section-count.tsx",
+        "mode": "100644",
+        "gitBlob": "45055ed941d2e8c016e2275a67bde41b8a455e73",
+        "sha256": "43dd97419d7b9033ccff2db0c632fe54ec6470b535dd10c5c07371ea7188bab8"
+      },
+      {
+        "path": "examples/side-panel-body.tsx",
+        "mode": "100644",
+        "gitBlob": "42cad096b7e4678862562a53a87b600e022b97d2",
+        "sha256": "c5b8fca75029a58ee29e46596d2f6b58862c861c76256625280db3e2cdf26834"
+      },
+      {
+        "path": "examples/status-tag.tsx",
+        "mode": "100644",
+        "gitBlob": "6986c8a45ce50aaf695af0825463b159ed492fd9",
+        "sha256": "5d0820462d61bd49d8691fb65440571f0fea9a243849e5ba4c469d69bdba8216"
+      },
+      {
+        "path": "examples/step-indicator.tsx",
+        "mode": "100644",
+        "gitBlob": "cdd1271e8996432c270a98fb7471112b47b7b871",
+        "sha256": "fa6aa4137bd377aba36353170ee0dcfd3ace302d0d643506b3c5bc47a4aa8a07"
+      },
+      {
+        "path": "examples/summary-footer.tsx",
+        "mode": "100644",
+        "gitBlob": "c531132170aaa7f95b1b132d9f54f5e7d52ece21",
+        "sha256": "e1141ea0973429d1310f29f3c10ce1281f92634d11251097b9bb8b7d95c09dac"
+      },
+      {
+        "path": "examples/tag.tsx",
+        "mode": "100644",
+        "gitBlob": "3a57140ce48349f1bb864a24599b6608b857346b",
+        "sha256": "27fc238b5971b384712462f23d06c96a970ffc0b26ce709374935763026eb850"
+      },
+      {
+        "path": "examples/tertiary-button.tsx",
+        "mode": "100644",
+        "gitBlob": "5537e29037e7cba578e214dd1ab6199b86ca4d76",
+        "sha256": "17e72e7e64ecf46e773915fabf4c57ac065e70d87d319f24c13f82d955bacc99"
+      },
+      {
+        "path": "examples/text-button.tsx",
+        "mode": "100644",
+        "gitBlob": "ace5bcdadb67f3acaa2e0157c5ad2eb4dc52a3fe",
+        "sha256": "46059597d8bdc69666512a8b79c9a1092bc7d91222112406b8a71f0ba1796f26"
+      },
+      {
+        "path": "examples/time-pill.tsx",
+        "mode": "100644",
+        "gitBlob": "2798302a5f4dd18ebc57fa5864a5c411e56b0063",
+        "sha256": "c35670014f47d7f632ddecf71259c1b5669e1a5c36e95b60f6f81b552ce375e5"
+      },
+      {
+        "path": "examples/utility-chip.tsx",
+        "mode": "100644",
+        "gitBlob": "12b6f458f1a01f8bde6e2f8f1625537278820929",
+        "sha256": "ed0af107d6d9dcf4839525caf3e872a40827c2d7db5e70918e8247170fb6a861"
+      },
+      {
+        "path": "examples/version-row.tsx",
+        "mode": "100644",
+        "gitBlob": "38a6574658f9f8a04d1054c84360f278fb122186",
+        "sha256": "de4797a2aab041443734137bb3f456c44237c7e02079328ef8d98a032ac8fd00"
+      },
+      {
+        "path": "guides/ai-implementation-guide.md",
+        "mode": "100644",
+        "gitBlob": "d4b77632c6b1b183edae80090443c29b0198baac",
+        "sha256": "a6a78b90aed8e94bc7f178a61373c671ed8f3b321ab3fb0b2eb9c2d80d006fee"
+      },
+      {
+        "path": "llms.txt",
+        "mode": "100644",
+        "gitBlob": "e43f82bfa8b1a2c63c67d46816f6597e42ec734b",
+        "sha256": "6c8bc0b8129beb85f643bcc51c9215377e1ad2ce1608cd88a8814d352772320d"
+      },
+      {
+        "path": "registry/chat-input.json",
+        "mode": "100644",
+        "gitBlob": "47c25af1aebdfb429c0b034f2a778d0234633542",
+        "sha256": "9ff5897d2bfd6a7c0518bde85f8aa890902b79119f35759815eca47992225e97"
+      },
+      {
+        "path": "registry/chat-message.json",
+        "mode": "100644",
+        "gitBlob": "041a20dcc6fd41675f0496c908ac768250aa1ab6",
+        "sha256": "be37416d9cc9c4f0489bb9d0ed786346782fc18ad7a67579db2c67a1f873cc7e"
+      },
+      {
+        "path": "registry/chat-panel.json",
+        "mode": "100644",
+        "gitBlob": "c60f62cb597e0d3cc68d3a1b9875da0391523ddc",
+        "sha256": "2eb74ea5f8cdd0f89ed8723e694e376bfcd165717894696df6fc19db1ea98bea"
+      },
+      {
+        "path": "registry/choice-card.json",
+        "mode": "100644",
+        "gitBlob": "1667b28f9b59705da00f2a658d03456126e774dd",
+        "sha256": "a5434409587c2623da0db81ee3a636afa6cda89a818af8f4962aefb8dca13604"
+      },
+      {
+        "path": "registry/empty-state.json",
+        "mode": "100644",
+        "gitBlob": "1fb61cf5d4752a280cc3b6c717c378bb5b7d8d18",
+        "sha256": "2c9e430e979f9b790e4739fac21eaf1a280af4c8d0c0ec4fc74357f1c8f29bb1"
+      },
+      {
+        "path": "registry/frame.json",
+        "mode": "100644",
+        "gitBlob": "e149eb84c5c777c4ced6085bca699e1b0b120ae0",
+        "sha256": "49c0932788b268dbf26ed19827dc6b94f93815b7d2d2ad951b8f0a8ae65cd4fa"
+      },
+      {
+        "path": "registry/ghost-pill-button.json",
+        "mode": "100644",
+        "gitBlob": "6e27c424d330c497c1edd540b7495432ff21ffa0",
+        "sha256": "0df9ef32f131d5304fe3a6bbc76f6480015ecc40a7e9bb72a0b7c696cf7ac00c"
+      },
+      {
+        "path": "registry/header-icon-button.json",
+        "mode": "100644",
+        "gitBlob": "b291c40f3eced7721de8167ed6bd9405a3f3c453",
+        "sha256": "2492e6553ff02716dca45af1fe9420e1fcc139291cf2e74db271c95595c05b3f"
+      },
+      {
+        "path": "registry/icon-badge.json",
+        "mode": "100644",
+        "gitBlob": "f03ee20b93225c6c21ebec7422375bcd4f833d0b",
+        "sha256": "1fb75b647314b5ba0da012f6c1c8fdc3fb765f5d93a73d8a06bec6c46eec029c"
+      },
+      {
+        "path": "registry/menu-row.json",
+        "mode": "100644",
+        "gitBlob": "96066c62c0e81cbc105e226b65a863bc6ea4e700",
+        "sha256": "32c26d5efcd86e473a7244c549baadce5f67d213d366326b4df0f700b4416862"
+      },
+      {
+        "path": "registry/message-card.json",
+        "mode": "100644",
+        "gitBlob": "d0b1757dbfe5326b9979eb55a87c1ffb65c221de",
+        "sha256": "300333683724c7b587acc6e5301bf405b6d464cf0f1f823bada660beb78eb549"
+      },
+      {
+        "path": "registry/review-item-card.json",
+        "mode": "100644",
+        "gitBlob": "66b6db05d225f28c5fb673ba65ee20487c3a051b",
+        "sha256": "8a62fb0a6d76ea1bb5f7f4ad3ff2b7cf1443029649eb2d8d2eca73dc7e523c2a"
+      },
+      {
+        "path": "registry/secondary-button.json",
+        "mode": "100644",
+        "gitBlob": "713061b820ec76be19ae405119d1c5f13d3e5353",
+        "sha256": "c62c631792171dc3ee034e6f74c20f424d7d0678e8c2d2fc1c8c54ef894acd1c"
+      },
+      {
+        "path": "registry/section-count.json",
+        "mode": "100644",
+        "gitBlob": "9ea2fa0b727ce274c21e896ae05c7c47a7a7a94e",
+        "sha256": "09184f16016375c6e0f4f57187f5f64a3d658d368c9becc161990571c7565fc2"
+      },
+      {
+        "path": "registry/side-panel-body.json",
+        "mode": "100644",
+        "gitBlob": "741735f75aa1edf03692a35439eb1767b5e1dc71",
+        "sha256": "10ada14b73c322f1556debf5c7cf567e92ea1e48ffe49510f4e8cf3ab8b5802b"
+      },
+      {
+        "path": "registry/status-tag.json",
+        "mode": "100644",
+        "gitBlob": "c2500ea0f9d78505f0ab482c028f69a9f71e05b6",
+        "sha256": "5572dd0bb1bfaad291359ec0c149ee9e8538c136a7bec1e15929592d404738d2"
+      },
+      {
+        "path": "registry/step-indicator.json",
+        "mode": "100644",
+        "gitBlob": "8a376018b6270009fe5559c11bf1c4462039feee",
+        "sha256": "d9febd30263f4ef6146f2136a589ec5fa8a60c0b199fdcab0a85e1b5d11fbfca"
+      },
+      {
+        "path": "registry/summary-footer.json",
+        "mode": "100644",
+        "gitBlob": "da9db311bb74afe54bbd5c63e16798021b9ccba5",
+        "sha256": "52ae09c2a2922f51bc0e715c2669f4e9a0f3065c1735c5f3c4c84ec107d34cd0"
+      },
+      {
+        "path": "registry/tag.json",
+        "mode": "100644",
+        "gitBlob": "75fd1873cf6c951dcb10db9502fa1f8be2b1ff7c",
+        "sha256": "93e7a79e9b86dbad4480d45af8b3313bde4cec37db270f16a826cc9378a3a15c"
+      },
+      {
+        "path": "registry/tertiary-button.json",
+        "mode": "100644",
+        "gitBlob": "bd01db45226f2eafe7c734708f26cb75d3bb4c9d",
+        "sha256": "3eed36b7604248732f2e8af5797ce5c9c39b76e172091dca36e58e8e16fabd96"
+      },
+      {
+        "path": "registry/text-button.json",
+        "mode": "100644",
+        "gitBlob": "8adb1897ffe353df0f374b19a7e177990c893c47",
+        "sha256": "e43cbf1cdeb0d2ed78c2cde5e343dea3a12b0201a3639c751669df4076f9fd4c"
+      },
+      {
+        "path": "registry/time-pill.json",
+        "mode": "100644",
+        "gitBlob": "c7018f1cf72a9694d00d3b1b1dc996f2ef94a54d",
+        "sha256": "6b5bb14c7d7213c3357aadd1a379553f4099f44a94d6c771fb4147263dbfa8a3"
+      },
+      {
+        "path": "registry/utility-chip.json",
+        "mode": "100644",
+        "gitBlob": "d24031e6efd3055fb67079ded668b47791617ffa",
+        "sha256": "3d261c58e56de172f464715f4142d6aea3e8d0901fadce4d065d1e6380daa98a"
+      },
+      {
+        "path": "registry/version-row.json",
+        "mode": "100644",
+        "gitBlob": "d46a141412af1e2752f81ed316b3f8d88b1d1e28",
+        "sha256": "0e4da0461c08cf61b8ba92788dfe47c6353289eb3dc7d3f398e431c5c3c826ca"
+      },
+      {
+        "path": "rules/frame-rules.json",
+        "mode": "100644",
+        "gitBlob": "4d4957166ad97c366c6361a84a65545ccb1c9213",
+        "sha256": "cb99e417f3f083a2cfec8de610e343efba4f9981f7220b7355b5a7ba1704613e"
+      },
+      {
+        "path": "styles/frame.css",
+        "mode": "100644",
+        "gitBlob": "9d6da4d4d4860f2450332a9b5f2613095ba8b228",
+        "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62"
+      }
+    ]
+  },
+  "metadataSha256": "493d1c018a4a101492f8a482e08d845fac700997f938986354dea157e5e6032d",
+  "annotationSha256": "9937410f55d6a3b310748feb9a1000931458ae37ebe95cfbdb4ce1b6b432e1c9",
+  "components": [
+    {
+      "name": "ChatMessage",
+      "slug": "chat-message",
+      "description": "User and assistant message presentation with a visual streaming state.",
+      "source": {
+        "commit": "125a6f6d993851f567b32578a4f6e48515930337",
+        "tree": "05cf4cdfface969115e2c4b0c376a0515ace4f01",
+        "path": "components/chat-message.tsx",
+        "sha256": "fb939684699b9b6cb8574a562a641c512cc29b969ce84ad56f264d857a06d278",
+        "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/components/chat-message.tsx"
+      },
+      "install": {
+        "primary": "npx shadcn@latest add @frame/chat-message",
+        "primaryCollection": "npx shadcn@latest add @frame/frame",
+        "registry": "https://system.beibeidesign.com/r/{name}.json",
+        "single": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/chat-message.json",
+        "collection": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/frame.json",
+        "shadcnVersion": "4.21.0",
+        "import": "./components/frame/chat-message",
+        "dependencies": [
+          "react@19.2.5",
+          "react-dom@19.2.5",
+          "lucide-react@1.14.0"
+        ],
+        "files": [
+          {
+            "path": "components/chat-message.tsx",
+            "target": "~/src/components/frame/chat-message.tsx",
+            "sha256": "fb939684699b9b6cb8574a562a641c512cc29b969ce84ad56f264d857a06d278"
+          },
+          {
+            "path": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css",
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62"
+          }
+        ],
+        "css": "./components/frame/frame.css",
+        "cssVariants": {
+          "singleAndManual": {
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62",
+            "bytes": 32246,
+            "sourcePath": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css"
+          },
+          "collection": {
+            "sha256": "ec3dff7d31cd670881fe4585919e3800d0030eb80f7deb75c1cceccadf1c6837",
+            "bytes": 31762,
+            "sourcePath": "registry/frame.json#files[styles/frame.css]",
+            "target": "~/src/components/frame/frame.css",
+            "limitations": [
+              "Missing --motion-duration-normal, --motion-ease-decelerate, .message-appear/@keyframes frame-fadeInUp and .chip-selected additions. Do not rely on these additions for this installation route. No assertion of complete dynamic styling equivalence."
+            ]
+          }
+        },
+        "wrapper": "frame-root",
+        "dark": "dark class on wrapper or ancestor",
+        "license": "MIT; retain LICENSE and THIRD_PARTY_NOTICES.md with redistributed source",
+        "sourceCopy": true
+      },
+      "props": [
+        {
+          "name": "role",
+          "type": "'user' | 'assistant'",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "content",
+          "type": "ReactNode",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "streaming",
+          "type": "boolean",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "false",
+              "owner": "ChatMessage"
+            }
+          ]
+        },
+        {
+          "name": "avatar",
+          "type": "ReactNode",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "showAvatar",
+          "type": "boolean",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "true",
+              "owner": "ChatMessage"
+            }
+          ]
+        },
+        {
+          "name": "meta",
+          "type": "ReactNode",
+          "required": false,
+          "defaults": []
+        }
+      ],
+      "callbacks": [],
+      "types": [],
+      "defaults": [
+        {
+          "prop": "streaming",
+          "expression": "false",
+          "owner": "ChatMessage"
+        },
+        {
+          "prop": "showAvatar",
+          "expression": "true",
+          "owner": "ChatMessage"
+        }
+      ],
+      "exports": [
+        "ChatMessage"
+      ],
+      "imports": [
+        "lucide-react",
+        "react"
+      ],
+      "nativeProps": {
+        "inherited": false,
+        "forwarding": "Only the declared props are accepted. React JSX intrinsic attributes (key) are framework semantics, not a native HTML prop passthrough."
+      },
+      "supportedStateProps": [
+        {
+          "name": "streaming",
+          "type": "boolean"
+        }
+      ],
+      "semantics": {
+        "name": "ChatMessage",
+        "slug": "chat-message",
+        "sourcePath": "components/chat-message.tsx",
+        "boundSourceHash": "fb939684699b9b6cb8574a562a641c512cc29b969ce84ad56f264d857a06d278",
+        "references": [
+          "role",
+          "content",
+          "streaming"
+        ],
+        "hostResponsibilities": [
+          "Host supplies content and role; streaming only changes visual presentation."
+        ],
+        "limitations": [
+          "No network transport, model streaming, persistence or markdown parser."
+        ]
+      },
+      "example": {
+        "path": "examples/chat-message.tsx",
+        "sha256": "49cf10c2e60f83eebecf6128fa2bbfd57161e2f22242dd13a5bc5f934faa31a4",
+        "code": "import { ChatMessage } from '../components/chat-message';\nimport '../styles/frame.css';\n\nexport default function Example() {\n  return <div className=\"frame-root\"><ChatMessage role=\"assistant\" content=\"Here is a concise answer.\" /></div>;\n}\n",
+        "setup": "Copy complete source closure to src/components/frame; change the example import to ./components/frame/<slug> and CSS import to ./components/frame/frame.css. Render inside frame-root with a matching host surface."
+      }
+    },
+    {
+      "name": "ChatPanel",
+      "slug": "chat-panel",
+      "description": "Conversation layout with message and composer slots and near-bottom scrolling.",
+      "source": {
+        "commit": "125a6f6d993851f567b32578a4f6e48515930337",
+        "tree": "05cf4cdfface969115e2c4b0c376a0515ace4f01",
+        "path": "components/chat-panel.tsx",
+        "sha256": "5d2aec84e46811960968c898091e8566c73d3ee27ec10697406c50633b899d74",
+        "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/components/chat-panel.tsx"
+      },
+      "install": {
+        "primary": "npx shadcn@latest add @frame/chat-panel",
+        "primaryCollection": "npx shadcn@latest add @frame/frame",
+        "registry": "https://system.beibeidesign.com/r/{name}.json",
+        "single": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/chat-panel.json",
+        "collection": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/frame.json",
+        "shadcnVersion": "4.21.0",
+        "import": "./components/frame/chat-panel",
+        "dependencies": [
+          "react@19.2.5",
+          "react-dom@19.2.5",
+          "lucide-react@1.14.0"
+        ],
+        "files": [
+          {
+            "path": "components/chat-panel.tsx",
+            "target": "~/src/components/frame/chat-panel.tsx",
+            "sha256": "5d2aec84e46811960968c898091e8566c73d3ee27ec10697406c50633b899d74"
+          },
+          {
+            "path": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css",
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62"
+          }
+        ],
+        "css": "./components/frame/frame.css",
+        "cssVariants": {
+          "singleAndManual": {
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62",
+            "bytes": 32246,
+            "sourcePath": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css"
+          },
+          "collection": {
+            "sha256": "ec3dff7d31cd670881fe4585919e3800d0030eb80f7deb75c1cceccadf1c6837",
+            "bytes": 31762,
+            "sourcePath": "registry/frame.json#files[styles/frame.css]",
+            "target": "~/src/components/frame/frame.css",
+            "limitations": [
+              "Missing --motion-duration-normal, --motion-ease-decelerate, .message-appear/@keyframes frame-fadeInUp and .chip-selected additions. Do not rely on these additions for this installation route. No assertion of complete dynamic styling equivalence."
+            ]
+          }
+        },
+        "wrapper": "frame-root",
+        "dark": "dark class on wrapper or ancestor",
+        "license": "MIT; retain LICENSE and THIRD_PARTY_NOTICES.md with redistributed source",
+        "sourceCopy": true
+      },
+      "props": [
+        {
+          "name": "header",
+          "type": "ReactNode",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "messages",
+          "type": "ReactNode",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "input",
+          "type": "ReactNode",
+          "required": true,
+          "defaults": []
+        }
+      ],
+      "callbacks": [],
+      "types": [],
+      "defaults": [],
+      "exports": [
+        "ChatPanel"
+      ],
+      "imports": [
+        "react"
+      ],
+      "nativeProps": {
+        "inherited": false,
+        "forwarding": "Only the declared props are accepted. React JSX intrinsic attributes (key) are framework semantics, not a native HTML prop passthrough."
+      },
+      "supportedStateProps": [],
+      "semantics": {
+        "name": "ChatPanel",
+        "slug": "chat-panel",
+        "sourcePath": "components/chat-panel.tsx",
+        "boundSourceHash": "5d2aec84e46811960968c898091e8566c73d3ee27ec10697406c50633b899d74",
+        "references": [
+          "messages",
+          "input",
+          "header",
+          "scrollRef",
+          "useLayoutEffect",
+          "grew",
+          "nearBottom",
+          "lastHeightRef"
+        ],
+        "hostResponsibilities": [
+          "Host supplies message/composer slots and a bounded parent height."
+        ],
+        "limitations": [
+          "Auto-scroll is evaluated in useLayoutEffect using post-layout geometry: content must have grown and scrollHeight - scrollTop - clientHeight must be strictly less than 120 pixels after that growth. Being at the bottom before appending does not guarantee following a large addition.",
+          "No initial-bottom positioning or unconditional message-following guarantee; full scrolling behavior is not comprehensively verified."
+        ]
+      },
+      "example": {
+        "path": "examples/chat-panel.tsx",
+        "sha256": "d1f605dd13331b198b18d381cecf40c83abb361baf8bd0336747044bca38d2a8",
+        "code": "import { ChatPanel } from '../components/chat-panel';\nimport '../styles/frame.css';\n\nexport default function Example() {\n  return <div className=\"frame-root\"><ChatPanel messages={<p>A conversation starts here.</p>} input={<input aria-label=\"Message\" />} /></div>;\n}\n",
+        "setup": "Copy complete source closure to src/components/frame; change the example import to ./components/frame/<slug> and CSS import to ./components/frame/frame.css. Render inside frame-root with a matching host surface."
+      }
+    },
+    {
+      "name": "ChatInput",
+      "slug": "chat-input",
+      "description": "Prompt composer with callback-based sending, optional attachments and mentions. No model provider is included.",
+      "source": {
+        "commit": "125a6f6d993851f567b32578a4f6e48515930337",
+        "tree": "05cf4cdfface969115e2c4b0c376a0515ace4f01",
+        "path": "components/chat-input.tsx",
+        "sha256": "364e5a0666b02be19265a7552791a7a696f16a676033d307a2d8f69582e42b6d",
+        "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/components/chat-input.tsx"
+      },
+      "install": {
+        "primary": "npx shadcn@latest add @frame/chat-input",
+        "primaryCollection": "npx shadcn@latest add @frame/frame",
+        "registry": "https://system.beibeidesign.com/r/{name}.json",
+        "single": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/chat-input.json",
+        "collection": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/frame.json",
+        "shadcnVersion": "4.21.0",
+        "import": "./components/frame/chat-input",
+        "dependencies": [
+          "react@19.2.5",
+          "react-dom@19.2.5",
+          "lucide-react@1.14.0"
+        ],
+        "files": [
+          {
+            "path": "components/chat-input.tsx",
+            "target": "~/src/components/frame/chat-input.tsx",
+            "sha256": "364e5a0666b02be19265a7552791a7a696f16a676033d307a2d8f69582e42b6d"
+          },
+          {
+            "path": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css",
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62"
+          }
+        ],
+        "css": "./components/frame/frame.css",
+        "cssVariants": {
+          "singleAndManual": {
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62",
+            "bytes": 32246,
+            "sourcePath": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css"
+          },
+          "collection": {
+            "sha256": "ec3dff7d31cd670881fe4585919e3800d0030eb80f7deb75c1cceccadf1c6837",
+            "bytes": 31762,
+            "sourcePath": "registry/frame.json#files[styles/frame.css]",
+            "target": "~/src/components/frame/frame.css",
+            "limitations": [
+              "Missing --motion-duration-normal, --motion-ease-decelerate, .message-appear/@keyframes frame-fadeInUp and .chip-selected additions. Do not rely on these additions for this installation route. No assertion of complete dynamic styling equivalence."
+            ]
+          }
+        },
+        "wrapper": "frame-root",
+        "dark": "dark class on wrapper or ancestor",
+        "license": "MIT; retain LICENSE and THIRD_PARTY_NOTICES.md with redistributed source",
+        "sourceCopy": true
+      },
+      "props": [
+        {
+          "name": "value",
+          "type": "string",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "''",
+              "owner": "BaselineChatInput"
+            }
+          ]
+        },
+        {
+          "name": "onChange",
+          "type": "(value: string) => void",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "onSend",
+          "type": "(value: string, attachments?: ChatInputAttachment[], meta?: ChatInputSendMeta) => void",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "placeholder",
+          "type": "string",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "'Type a message…'",
+              "owner": "BaselineChatInput"
+            },
+            {
+              "expression": "'Type a message…'",
+              "owner": "RichChatInput"
+            }
+          ]
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "false",
+              "owner": "BaselineChatInput"
+            },
+            {
+              "expression": "false",
+              "owner": "RichChatInput"
+            }
+          ]
+        },
+        {
+          "name": "chips",
+          "type": "ReactNode",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "fillHeight",
+          "type": "boolean",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "modeSlot",
+          "type": "ReactNode",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "features",
+          "type": "ChatInputFeatures",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "{}",
+              "owner": "RichChatInput"
+            }
+          ]
+        }
+      ],
+      "callbacks": [
+        {
+          "path": "features.actionChips.onClick",
+          "signature": "(chip: ChatInputActionChip) => void",
+          "required": false
+        },
+        {
+          "path": "features.attach.onAdd",
+          "signature": "(files: File[], source: ChatInputAttachSource) => void",
+          "required": true
+        },
+        {
+          "path": "features.attach.onRemove",
+          "signature": "(id: string) => void",
+          "required": true
+        },
+        {
+          "path": "features.voice.onActivate",
+          "signature": "() => void",
+          "required": true
+        },
+        {
+          "path": "features.voiceInput.onAudioBuffer",
+          "signature": "(blob: Blob) => Promise<string>",
+          "required": true
+        },
+        {
+          "path": "onChange",
+          "signature": "(value: string) => void",
+          "required": false
+        },
+        {
+          "path": "onSend",
+          "signature": "(value: string, attachments?: ChatInputAttachment[], meta?: ChatInputSendMeta) => void",
+          "required": true
+        }
+      ],
+      "types": [
+        {
+          "name": "ChatInputActionChip",
+          "declaration": "export interface ChatInputActionChip {\n    label: string;\n    action: string;\n}"
+        },
+        {
+          "name": "ChatInputAttachment",
+          "declaration": "export interface ChatInputAttachment {\n    id: string;\n    name: string;\n    mimeType: string;\n    size: number;\n    kind: 'image' | 'file';\n    dataUrl: string;\n}"
+        },
+        {
+          "name": "ChatInputAttachSource",
+          "declaration": "export type ChatInputAttachSource = 'photo' | 'camera' | 'upload';"
+        },
+        {
+          "name": "ChatInputFeatures",
+          "declaration": "export interface ChatInputFeatures {\n    voice?: {\n        onActivate: () => void;\n        active: boolean;\n        emphasized?: boolean;\n    };\n    voiceInput?: {\n        onAudioBuffer: (blob: Blob) => Promise<string>;\n        maxDurationMs?: number;\n    };\n    attach?: {\n        attachments: ChatInputAttachment[];\n        onAdd: (files: File[], source: ChatInputAttachSource) => void;\n        onRemove: (id: string) => void;\n        limit?: {\n            maxBytes?: number;\n            maxCount?: number;\n        };\n    };\n    actionChips?: {\n        items?: ChatInputActionChip[];\n        onClick?: (chip: ChatInputActionChip) => void;\n        quickItems?: string[];\n        iconMap?: Record<string, string | ReactNode>;\n    };\n    mentions?: {\n        options: ChatInputMentionOption[];\n        emptyLabel?: string;\n    };\n    forceSendActive?: boolean;\n    isAiResponding?: boolean;\n    voiceModeActive?: boolean;\n    draft?: {\n        key?: string;\n        initial?: string;\n    };\n}"
+        },
+        {
+          "name": "ChatInputMention",
+          "declaration": "export interface ChatInputMention {\n    id: string;\n    label: string;\n}"
+        },
+        {
+          "name": "ChatInputMentionOption",
+          "declaration": "export interface ChatInputMentionOption {\n    id: string;\n    label: string;\n    subtitle?: string;\n    avatarUrl?: string;\n    keywords?: string[];\n}"
+        },
+        {
+          "name": "ChatInputProps",
+          "declaration": "export interface ChatInputProps {\n    value?: string;\n    onChange?: (value: string) => void;\n    onSend: (value: string, attachments?: ChatInputAttachment[], meta?: ChatInputSendMeta) => void;\n    placeholder?: string;\n    disabled?: boolean;\n    chips?: ReactNode;\n    fillHeight?: boolean;\n    modeSlot?: ReactNode;\n    features?: ChatInputFeatures;\n}"
+        },
+        {
+          "name": "ChatInputSendMeta",
+          "declaration": "export interface ChatInputSendMeta {\n    mentions?: ChatInputMention[];\n}"
+        }
+      ],
+      "defaults": [
+        {
+          "prop": "value",
+          "expression": "''",
+          "owner": "BaselineChatInput"
+        },
+        {
+          "prop": "placeholder",
+          "expression": "'Type a message…'",
+          "owner": "BaselineChatInput"
+        },
+        {
+          "prop": "disabled",
+          "expression": "false",
+          "owner": "BaselineChatInput"
+        },
+        {
+          "prop": "placeholder",
+          "expression": "'Type a message…'",
+          "owner": "RichChatInput"
+        },
+        {
+          "prop": "disabled",
+          "expression": "false",
+          "owner": "RichChatInput"
+        },
+        {
+          "prop": "features",
+          "expression": "{}",
+          "owner": "RichChatInput"
+        }
+      ],
+      "exports": [
+        "Tooltip",
+        "ToolbarIconButton",
+        "Chip",
+        "ChatInputAttachSource",
+        "ChatInputAttachment",
+        "ChatInputActionChip",
+        "ChatInputMentionOption",
+        "ChatInputMention",
+        "ChatInputSendMeta",
+        "ChatInputFeatures",
+        "ChatInputProps",
+        "AttachmentChip",
+        "ChatInput"
+      ],
+      "imports": [
+        "lucide-react",
+        "react",
+        "react-dom"
+      ],
+      "nativeProps": {
+        "inherited": false,
+        "forwarding": "Only the declared props are accepted. React JSX intrinsic attributes (key) are framework semantics, not a native HTML prop passthrough."
+      },
+      "supportedStateProps": [
+        {
+          "name": "disabled",
+          "type": "boolean"
+        }
+      ],
+      "semantics": {
+        "name": "ChatInput",
+        "slug": "chat-input",
+        "sourcePath": "components/chat-input.tsx",
+        "boundSourceHash": "364e5a0666b02be19265a7552791a7a696f16a676033d307a2d8f69582e42b6d",
+        "references": [
+          "ChatInput",
+          "BaselineChatInput",
+          "RichChatInput",
+          "ChatInputFeatures",
+          "onSend"
+        ],
+        "hostResponsibilities": [
+          "features omitted selects BaselineChatInput: host must provide value and onChange to edit text.",
+          "features provided (including {}) selects RichChatInput: value !== undefined is controlled; otherwise internal draft state is used.",
+          "Host implements sending, attachment storage/removal and optional voice/transcription callbacks; sending does not execute a model."
+        ],
+        "limitations": [
+          "No suggestion prop in this released revision.",
+          "Baseline does not clear value on send; rich branch clears via its state/onChange path.",
+          "Voice needs browser permission and host transcription; draft key does not implement durable persistence."
+        ]
+      },
+      "example": {
+        "path": "examples/chat-input.tsx",
+        "sha256": "a3d4e619cf20f93d167b97072ee093402efc99a97437b8179cd2ad870ecfdcf9",
+        "code": "import { ChatInput } from '../components/chat-input';\nimport '../styles/frame.css';\n\nexport default function Example() {\n  return <div className=\"frame-root\"><ChatInput features={{}} onSend={() => {}} /></div>;\n}\n",
+        "setup": "Copy complete source closure to src/components/frame; change the example import to ./components/frame/<slug> and CSS import to ./components/frame/frame.css. Render inside frame-root with a matching host surface."
+      }
+    },
+    {
+      "name": "MessageCard",
+      "slug": "message-card",
+      "description": "Inline event notice with information, success or warning tone and an optional action slot.",
+      "source": {
+        "commit": "125a6f6d993851f567b32578a4f6e48515930337",
+        "tree": "05cf4cdfface969115e2c4b0c376a0515ace4f01",
+        "path": "components/message-card.tsx",
+        "sha256": "c6f620afbc58e9c398456157261cfdd940696c01ca9c6dfef50ec5247fd25dc8",
+        "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/components/message-card.tsx"
+      },
+      "install": {
+        "primary": "npx shadcn@latest add @frame/message-card",
+        "primaryCollection": "npx shadcn@latest add @frame/frame",
+        "registry": "https://system.beibeidesign.com/r/{name}.json",
+        "single": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/message-card.json",
+        "collection": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/frame.json",
+        "shadcnVersion": "4.21.0",
+        "import": "./components/frame/message-card",
+        "dependencies": [
+          "react@19.2.5",
+          "react-dom@19.2.5",
+          "lucide-react@1.14.0"
+        ],
+        "files": [
+          {
+            "path": "components/message-card.tsx",
+            "target": "~/src/components/frame/message-card.tsx",
+            "sha256": "c6f620afbc58e9c398456157261cfdd940696c01ca9c6dfef50ec5247fd25dc8"
+          },
+          {
+            "path": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css",
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62"
+          }
+        ],
+        "css": "./components/frame/frame.css",
+        "cssVariants": {
+          "singleAndManual": {
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62",
+            "bytes": 32246,
+            "sourcePath": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css"
+          },
+          "collection": {
+            "sha256": "ec3dff7d31cd670881fe4585919e3800d0030eb80f7deb75c1cceccadf1c6837",
+            "bytes": 31762,
+            "sourcePath": "registry/frame.json#files[styles/frame.css]",
+            "target": "~/src/components/frame/frame.css",
+            "limitations": [
+              "Missing --motion-duration-normal, --motion-ease-decelerate, .message-appear/@keyframes frame-fadeInUp and .chip-selected additions. Do not rely on these additions for this installation route. No assertion of complete dynamic styling equivalence."
+            ]
+          }
+        },
+        "wrapper": "frame-root",
+        "dark": "dark class on wrapper or ancestor",
+        "license": "MIT; retain LICENSE and THIRD_PARTY_NOTICES.md with redistributed source",
+        "sourceCopy": true
+      },
+      "props": [
+        {
+          "name": "tone",
+          "type": "MessageCardTone",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "'info'",
+              "owner": "MessageCard"
+            }
+          ]
+        },
+        {
+          "name": "title",
+          "type": "ReactNode",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "body",
+          "type": "ReactNode",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "action",
+          "type": "ReactNode",
+          "required": false,
+          "defaults": []
+        }
+      ],
+      "callbacks": [],
+      "types": [
+        {
+          "name": "MessageCardTone",
+          "declaration": "type MessageCardTone = 'info' | 'success' | 'warning';"
+        }
+      ],
+      "defaults": [
+        {
+          "prop": "tone",
+          "expression": "'info'",
+          "owner": "MessageCard"
+        }
+      ],
+      "exports": [
+        "MessageCard"
+      ],
+      "imports": [
+        "lucide-react",
+        "react"
+      ],
+      "nativeProps": {
+        "inherited": false,
+        "forwarding": "Only the declared props are accepted. React JSX intrinsic attributes (key) are framework semantics, not a native HTML prop passthrough."
+      },
+      "supportedStateProps": [],
+      "semantics": {
+        "name": "MessageCard",
+        "slug": "message-card",
+        "sourcePath": "components/message-card.tsx",
+        "boundSourceHash": "c6f620afbc58e9c398456157261cfdd940696c01ca9c6dfef50ec5247fd25dc8",
+        "references": [
+          "tone",
+          "title",
+          "body",
+          "action"
+        ],
+        "hostResponsibilities": [
+          "Host supplies notice and optional action slot."
+        ],
+        "limitations": [
+          "No automatic action, dismissal or status transition."
+        ]
+      },
+      "example": {
+        "path": "examples/message-card.tsx",
+        "sha256": "5f6645a845f9d6772747b5913dca7e52c37969ffb10c5f1e6d19a2a4642a67a2",
+        "code": "import { MessageCard } from '../components/message-card';\nimport '../styles/frame.css';\n\nexport default function Example() {\n  return <div className=\"frame-root\"><MessageCard title=\"Saved\" body=\"Your draft is ready to review.\" tone=\"success\" /></div>;\n}\n",
+        "setup": "Copy complete source closure to src/components/frame; change the example import to ./components/frame/<slug> and CSS import to ./components/frame/frame.css. Render inside frame-root with a matching host surface."
+      }
+    },
+    {
+      "name": "StatusTag",
+      "slug": "status-tag",
+      "description": "Semantic status pill for pending, processing, review and completed states.",
+      "source": {
+        "commit": "125a6f6d993851f567b32578a4f6e48515930337",
+        "tree": "05cf4cdfface969115e2c4b0c376a0515ace4f01",
+        "path": "components/status-tag.tsx",
+        "sha256": "6a3831e96ce1e2bfb2f9466f399c644583dcfae8e665317f540110eb50178040",
+        "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/components/status-tag.tsx"
+      },
+      "install": {
+        "primary": "npx shadcn@latest add @frame/status-tag",
+        "primaryCollection": "npx shadcn@latest add @frame/frame",
+        "registry": "https://system.beibeidesign.com/r/{name}.json",
+        "single": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/status-tag.json",
+        "collection": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/frame.json",
+        "shadcnVersion": "4.21.0",
+        "import": "./components/frame/status-tag",
+        "dependencies": [
+          "react@19.2.5",
+          "react-dom@19.2.5",
+          "lucide-react@1.14.0"
+        ],
+        "files": [
+          {
+            "path": "components/status-tag.tsx",
+            "target": "~/src/components/frame/status-tag.tsx",
+            "sha256": "6a3831e96ce1e2bfb2f9466f399c644583dcfae8e665317f540110eb50178040"
+          },
+          {
+            "path": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css",
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62"
+          }
+        ],
+        "css": "./components/frame/frame.css",
+        "cssVariants": {
+          "singleAndManual": {
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62",
+            "bytes": 32246,
+            "sourcePath": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css"
+          },
+          "collection": {
+            "sha256": "ec3dff7d31cd670881fe4585919e3800d0030eb80f7deb75c1cceccadf1c6837",
+            "bytes": 31762,
+            "sourcePath": "registry/frame.json#files[styles/frame.css]",
+            "target": "~/src/components/frame/frame.css",
+            "limitations": [
+              "Missing --motion-duration-normal, --motion-ease-decelerate, .message-appear/@keyframes frame-fadeInUp and .chip-selected additions. Do not rely on these additions for this installation route. No assertion of complete dynamic styling equivalence."
+            ]
+          }
+        },
+        "wrapper": "frame-root",
+        "dark": "dark class on wrapper or ancestor",
+        "license": "MIT; retain LICENSE and THIRD_PARTY_NOTICES.md with redistributed source",
+        "sourceCopy": true
+      },
+      "props": [
+        {
+          "name": "variant",
+          "type": "StatusVariant",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "label",
+          "type": "ReactNode",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "showIcon",
+          "type": "boolean",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "true",
+              "owner": "StatusTag"
+            }
+          ]
+        },
+        {
+          "name": "size",
+          "type": "'sm' | 'md'",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "'md'",
+              "owner": "StatusTag"
+            }
+          ]
+        },
+        {
+          "name": "icon",
+          "type": "LucideIcon",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "outline",
+          "type": "boolean",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "false",
+              "owner": "StatusTag"
+            }
+          ]
+        },
+        {
+          "name": "tooltip",
+          "type": "string",
+          "required": false,
+          "defaults": []
+        }
+      ],
+      "callbacks": [],
+      "types": [
+        {
+          "name": "StatusVariant",
+          "declaration": "export type StatusVariant = 'pending' | 'in-progress' | 'submitted' | 'in-review' | 'success' | 'failed' | 'expired' | 'neutral';"
+        }
+      ],
+      "defaults": [
+        {
+          "prop": "showIcon",
+          "expression": "true",
+          "owner": "StatusTag"
+        },
+        {
+          "prop": "size",
+          "expression": "'md'",
+          "owner": "StatusTag"
+        },
+        {
+          "prop": "outline",
+          "expression": "false",
+          "owner": "StatusTag"
+        }
+      ],
+      "exports": [
+        "StatusVariant",
+        "StatusTag"
+      ],
+      "imports": [
+        "lucide-react",
+        "react"
+      ],
+      "nativeProps": {
+        "inherited": false,
+        "forwarding": "Only the declared props are accepted. React JSX intrinsic attributes (key) are framework semantics, not a native HTML prop passthrough."
+      },
+      "supportedStateProps": [
+        {
+          "name": "variant",
+          "type": "StatusVariant"
+        }
+      ],
+      "semantics": {
+        "name": "StatusTag",
+        "slug": "status-tag",
+        "sourcePath": "components/status-tag.tsx",
+        "boundSourceHash": "6a3831e96ce1e2bfb2f9466f399c644583dcfae8e665317f540110eb50178040",
+        "references": [
+          "variant",
+          "label"
+        ],
+        "hostResponsibilities": [
+          "Host sets semantic variant and visible label."
+        ],
+        "limitations": [
+          "No live-region announcement or background task execution."
+        ]
+      },
+      "example": {
+        "path": "examples/status-tag.tsx",
+        "sha256": "5d0820462d61bd49d8691fb65440571f0fea9a243849e5ba4c469d69bdba8216",
+        "code": "import { StatusTag } from '../components/status-tag';\nimport '../styles/frame.css';\n\nexport default function Example() {\n  return <div className=\"frame-root\"><StatusTag variant=\"in-progress\" label=\"Processing\" /></div>;\n}\n",
+        "setup": "Copy complete source closure to src/components/frame; change the example import to ./components/frame/<slug> and CSS import to ./components/frame/frame.css. Render inside frame-root with a matching host surface."
+      }
+    },
+    {
+      "name": "Tag",
+      "slug": "tag",
+      "description": "Compact neutral label with an optional outline and tooltip.",
+      "source": {
+        "commit": "125a6f6d993851f567b32578a4f6e48515930337",
+        "tree": "05cf4cdfface969115e2c4b0c376a0515ace4f01",
+        "path": "components/tag.tsx",
+        "sha256": "6e8b3a28214a79246e080108b09fd84ae4e556ddb83fbbc1a1537258906077e9",
+        "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/components/tag.tsx"
+      },
+      "install": {
+        "primary": "npx shadcn@latest add @frame/tag",
+        "primaryCollection": "npx shadcn@latest add @frame/frame",
+        "registry": "https://system.beibeidesign.com/r/{name}.json",
+        "single": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/tag.json",
+        "collection": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/frame.json",
+        "shadcnVersion": "4.21.0",
+        "import": "./components/frame/tag",
+        "dependencies": [
+          "react@19.2.5",
+          "react-dom@19.2.5",
+          "lucide-react@1.14.0"
+        ],
+        "files": [
+          {
+            "path": "components/tag.tsx",
+            "target": "~/src/components/frame/tag.tsx",
+            "sha256": "6e8b3a28214a79246e080108b09fd84ae4e556ddb83fbbc1a1537258906077e9"
+          },
+          {
+            "path": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css",
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62"
+          }
+        ],
+        "css": "./components/frame/frame.css",
+        "cssVariants": {
+          "singleAndManual": {
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62",
+            "bytes": 32246,
+            "sourcePath": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css"
+          },
+          "collection": {
+            "sha256": "ec3dff7d31cd670881fe4585919e3800d0030eb80f7deb75c1cceccadf1c6837",
+            "bytes": 31762,
+            "sourcePath": "registry/frame.json#files[styles/frame.css]",
+            "target": "~/src/components/frame/frame.css",
+            "limitations": [
+              "Missing --motion-duration-normal, --motion-ease-decelerate, .message-appear/@keyframes frame-fadeInUp and .chip-selected additions. Do not rely on these additions for this installation route. No assertion of complete dynamic styling equivalence."
+            ]
+          }
+        },
+        "wrapper": "frame-root",
+        "dark": "dark class on wrapper or ancestor",
+        "license": "MIT; retain LICENSE and THIRD_PARTY_NOTICES.md with redistributed source",
+        "sourceCopy": true
+      },
+      "props": [
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "outline",
+          "type": "boolean",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "false",
+              "owner": "Tag"
+            }
+          ]
+        },
+        {
+          "name": "tooltip",
+          "type": "string",
+          "required": false,
+          "defaults": []
+        }
+      ],
+      "callbacks": [],
+      "types": [],
+      "defaults": [
+        {
+          "prop": "outline",
+          "expression": "false",
+          "owner": "Tag"
+        }
+      ],
+      "exports": [
+        "StatusVariant",
+        "StatusTag",
+        "Tag"
+      ],
+      "imports": [
+        "lucide-react",
+        "react"
+      ],
+      "nativeProps": {
+        "inherited": false,
+        "forwarding": "Only the declared props are accepted. React JSX intrinsic attributes (key) are framework semantics, not a native HTML prop passthrough."
+      },
+      "supportedStateProps": [],
+      "semantics": {
+        "name": "Tag",
+        "slug": "tag",
+        "sourcePath": "components/tag.tsx",
+        "boundSourceHash": "6e8b3a28214a79246e080108b09fd84ae4e556ddb83fbbc1a1537258906077e9",
+        "references": [
+          "children",
+          "outline",
+          "tooltip"
+        ],
+        "hostResponsibilities": [
+          "Host supplies label and optional tooltip."
+        ],
+        "limitations": [
+          "Presentational label; no selection callback."
+        ]
+      },
+      "example": {
+        "path": "examples/tag.tsx",
+        "sha256": "27fc238b5971b384712462f23d06c96a970ffc0b26ce709374935763026eb850",
+        "code": "import { Tag } from '../components/tag';\nimport '../styles/frame.css';\n\nexport default function Example() {\n  return <div className=\"frame-root\"><Tag>Reference</Tag></div>;\n}\n",
+        "setup": "Copy complete source closure to src/components/frame; change the example import to ./components/frame/<slug> and CSS import to ./components/frame/frame.css. Render inside frame-root with a matching host surface."
+      }
+    },
+    {
+      "name": "SidePanelBody",
+      "slug": "side-panel-body",
+      "description": "Scrollable conversation inspector body with spacing and an automatic scrollbar.",
+      "source": {
+        "commit": "125a6f6d993851f567b32578a4f6e48515930337",
+        "tree": "05cf4cdfface969115e2c4b0c376a0515ace4f01",
+        "path": "components/side-panel-body.tsx",
+        "sha256": "af84757f0b9c9a1910a6241b31794742f7d3cc7ae8d37d88111fc6c4e8c33213",
+        "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/components/side-panel-body.tsx"
+      },
+      "install": {
+        "primary": "npx shadcn@latest add @frame/side-panel-body",
+        "primaryCollection": "npx shadcn@latest add @frame/frame",
+        "registry": "https://system.beibeidesign.com/r/{name}.json",
+        "single": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/side-panel-body.json",
+        "collection": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/frame.json",
+        "shadcnVersion": "4.21.0",
+        "import": "./components/frame/side-panel-body",
+        "dependencies": [
+          "react@19.2.5",
+          "react-dom@19.2.5",
+          "lucide-react@1.14.0"
+        ],
+        "files": [
+          {
+            "path": "components/side-panel-body.tsx",
+            "target": "~/src/components/frame/side-panel-body.tsx",
+            "sha256": "af84757f0b9c9a1910a6241b31794742f7d3cc7ae8d37d88111fc6c4e8c33213"
+          },
+          {
+            "path": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css",
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62"
+          }
+        ],
+        "css": "./components/frame/frame.css",
+        "cssVariants": {
+          "singleAndManual": {
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62",
+            "bytes": 32246,
+            "sourcePath": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css"
+          },
+          "collection": {
+            "sha256": "ec3dff7d31cd670881fe4585919e3800d0030eb80f7deb75c1cceccadf1c6837",
+            "bytes": 31762,
+            "sourcePath": "registry/frame.json#files[styles/frame.css]",
+            "target": "~/src/components/frame/frame.css",
+            "limitations": [
+              "Missing --motion-duration-normal, --motion-ease-decelerate, .message-appear/@keyframes frame-fadeInUp and .chip-selected additions. Do not rely on these additions for this installation route. No assertion of complete dynamic styling equivalence."
+            ]
+          }
+        },
+        "wrapper": "frame-root",
+        "dark": "dark class on wrapper or ancestor",
+        "license": "MIT; retain LICENSE and THIRD_PARTY_NOTICES.md with redistributed source",
+        "sourceCopy": true
+      },
+      "props": [
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": true,
+          "defaults": []
+        }
+      ],
+      "callbacks": [],
+      "types": [],
+      "defaults": [],
+      "exports": [
+        "SidePanelBody"
+      ],
+      "imports": [
+        "react"
+      ],
+      "nativeProps": {
+        "inherited": false,
+        "forwarding": "Only the declared props are accepted. React JSX intrinsic attributes (key) are framework semantics, not a native HTML prop passthrough."
+      },
+      "supportedStateProps": [],
+      "semantics": {
+        "name": "SidePanelBody",
+        "slug": "side-panel-body",
+        "sourcePath": "components/side-panel-body.tsx",
+        "boundSourceHash": "af84757f0b9c9a1910a6241b31794742f7d3cc7ae8d37d88111fc6c4e8c33213",
+        "references": [
+          "children"
+        ],
+        "hostResponsibilities": [
+          "Host supplies content and enclosing layout."
+        ],
+        "limitations": [
+          "No panel open/close state."
+        ]
+      },
+      "example": {
+        "path": "examples/side-panel-body.tsx",
+        "sha256": "c5b8fca75029a58ee29e46596d2f6b58862c861c76256625280db3e2cdf26834",
+        "code": "import { SidePanelBody } from '../components/side-panel-body';\nimport '../styles/frame.css';\n\nexport default function Example() {\n  return <div className=\"frame-root\"><div className=\"text-text-primary\"><SidePanelBody><p>Conversation context</p></SidePanelBody></div></div>;\n}\n",
+        "setup": "Copy complete source closure to src/components/frame; change the example import to ./components/frame/<slug> and CSS import to ./components/frame/frame.css. Render inside frame-root with a matching host surface."
+      }
+    },
+    {
+      "name": "SectionCount",
+      "slug": "section-count",
+      "description": "Compact count label for grouped messages, references or workflow steps.",
+      "source": {
+        "commit": "125a6f6d993851f567b32578a4f6e48515930337",
+        "tree": "05cf4cdfface969115e2c4b0c376a0515ace4f01",
+        "path": "components/section-count.tsx",
+        "sha256": "64c15ed8d9c8fb5f020fabf91454cdbd59ccf344c2bc4a1d4defb4c015d9daee",
+        "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/components/section-count.tsx"
+      },
+      "install": {
+        "primary": "npx shadcn@latest add @frame/section-count",
+        "primaryCollection": "npx shadcn@latest add @frame/frame",
+        "registry": "https://system.beibeidesign.com/r/{name}.json",
+        "single": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/section-count.json",
+        "collection": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/frame.json",
+        "shadcnVersion": "4.21.0",
+        "import": "./components/frame/section-count",
+        "dependencies": [
+          "react@19.2.5",
+          "react-dom@19.2.5",
+          "lucide-react@1.14.0"
+        ],
+        "files": [
+          {
+            "path": "components/section-count.tsx",
+            "target": "~/src/components/frame/section-count.tsx",
+            "sha256": "64c15ed8d9c8fb5f020fabf91454cdbd59ccf344c2bc4a1d4defb4c015d9daee"
+          },
+          {
+            "path": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css",
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62"
+          }
+        ],
+        "css": "./components/frame/frame.css",
+        "cssVariants": {
+          "singleAndManual": {
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62",
+            "bytes": 32246,
+            "sourcePath": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css"
+          },
+          "collection": {
+            "sha256": "ec3dff7d31cd670881fe4585919e3800d0030eb80f7deb75c1cceccadf1c6837",
+            "bytes": 31762,
+            "sourcePath": "registry/frame.json#files[styles/frame.css]",
+            "target": "~/src/components/frame/frame.css",
+            "limitations": [
+              "Missing --motion-duration-normal, --motion-ease-decelerate, .message-appear/@keyframes frame-fadeInUp and .chip-selected additions. Do not rely on these additions for this installation route. No assertion of complete dynamic styling equivalence."
+            ]
+          }
+        },
+        "wrapper": "frame-root",
+        "dark": "dark class on wrapper or ancestor",
+        "license": "MIT; retain LICENSE and THIRD_PARTY_NOTICES.md with redistributed source",
+        "sourceCopy": true
+      },
+      "props": [
+        {
+          "name": "n",
+          "type": "number",
+          "required": true,
+          "defaults": []
+        }
+      ],
+      "callbacks": [],
+      "types": [],
+      "defaults": [],
+      "exports": [
+        "SectionCount"
+      ],
+      "imports": [],
+      "nativeProps": {
+        "inherited": false,
+        "forwarding": "Only the declared props are accepted. React JSX intrinsic attributes (key) are framework semantics, not a native HTML prop passthrough."
+      },
+      "supportedStateProps": [],
+      "semantics": {
+        "name": "SectionCount",
+        "slug": "section-count",
+        "sourcePath": "components/section-count.tsx",
+        "boundSourceHash": "64c15ed8d9c8fb5f020fabf91454cdbd59ccf344c2bc4a1d4defb4c015d9daee",
+        "references": [
+          "n"
+        ],
+        "hostResponsibilities": [
+          "Host computes count."
+        ],
+        "limitations": [
+          "No automatic counting or pluralization."
+        ]
+      },
+      "example": {
+        "path": "examples/section-count.tsx",
+        "sha256": "43dd97419d7b9033ccff2db0c632fe54ec6470b535dd10c5c07371ea7188bab8",
+        "code": "import { SectionCount } from '../components/section-count';\nimport '../styles/frame.css';\n\nexport default function Example() {\n  return <div className=\"frame-root\"><div className=\"text-text-primary\"><SectionCount n={3} /></div></div>;\n}\n",
+        "setup": "Copy complete source closure to src/components/frame; change the example import to ./components/frame/<slug> and CSS import to ./components/frame/frame.css. Render inside frame-root with a matching host surface."
+      }
+    },
+    {
+      "name": "TimePill",
+      "slug": "time-pill",
+      "description": "Compact time or effort label using the shared status presentation.",
+      "source": {
+        "commit": "125a6f6d993851f567b32578a4f6e48515930337",
+        "tree": "05cf4cdfface969115e2c4b0c376a0515ace4f01",
+        "path": "components/time-pill.tsx",
+        "sha256": "fb9bc81dcfd364239a6a9655f12b0bed672727a24256faeda1ecfa108dfa6fb7",
+        "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/components/time-pill.tsx"
+      },
+      "install": {
+        "primary": "npx shadcn@latest add @frame/time-pill",
+        "primaryCollection": "npx shadcn@latest add @frame/frame",
+        "registry": "https://system.beibeidesign.com/r/{name}.json",
+        "single": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/time-pill.json",
+        "collection": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/frame.json",
+        "shadcnVersion": "4.21.0",
+        "import": "./components/frame/time-pill",
+        "dependencies": [
+          "react@19.2.5",
+          "react-dom@19.2.5",
+          "lucide-react@1.14.0"
+        ],
+        "files": [
+          {
+            "path": "components/time-pill.tsx",
+            "target": "~/src/components/frame/time-pill.tsx",
+            "sha256": "fb9bc81dcfd364239a6a9655f12b0bed672727a24256faeda1ecfa108dfa6fb7"
+          },
+          {
+            "path": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css",
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62"
+          }
+        ],
+        "css": "./components/frame/frame.css",
+        "cssVariants": {
+          "singleAndManual": {
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62",
+            "bytes": 32246,
+            "sourcePath": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css"
+          },
+          "collection": {
+            "sha256": "ec3dff7d31cd670881fe4585919e3800d0030eb80f7deb75c1cceccadf1c6837",
+            "bytes": 31762,
+            "sourcePath": "registry/frame.json#files[styles/frame.css]",
+            "target": "~/src/components/frame/frame.css",
+            "limitations": [
+              "Missing --motion-duration-normal, --motion-ease-decelerate, .message-appear/@keyframes frame-fadeInUp and .chip-selected additions. Do not rely on these additions for this installation route. No assertion of complete dynamic styling equivalence."
+            ]
+          }
+        },
+        "wrapper": "frame-root",
+        "dark": "dark class on wrapper or ancestor",
+        "license": "MIT; retain LICENSE and THIRD_PARTY_NOTICES.md with redistributed source",
+        "sourceCopy": true
+      },
+      "props": [
+        {
+          "name": "time",
+          "type": "string",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "tooltip",
+          "type": "string",
+          "required": false,
+          "defaults": []
+        }
+      ],
+      "callbacks": [],
+      "types": [],
+      "defaults": [],
+      "exports": [
+        "TimePill",
+        "StatusVariant",
+        "StatusTag"
+      ],
+      "imports": [
+        "lucide-react",
+        "react"
+      ],
+      "nativeProps": {
+        "inherited": false,
+        "forwarding": "Only the declared props are accepted. React JSX intrinsic attributes (key) are framework semantics, not a native HTML prop passthrough."
+      },
+      "supportedStateProps": [],
+      "semantics": {
+        "name": "TimePill",
+        "slug": "time-pill",
+        "sourcePath": "components/time-pill.tsx",
+        "boundSourceHash": "fb9bc81dcfd364239a6a9655f12b0bed672727a24256faeda1ecfa108dfa6fb7",
+        "references": [
+          "time",
+          "tooltip"
+        ],
+        "hostResponsibilities": [
+          "Host formats time text."
+        ],
+        "limitations": [
+          "No timer or elapsed-time calculation."
+        ]
+      },
+      "example": {
+        "path": "examples/time-pill.tsx",
+        "sha256": "c35670014f47d7f632ddecf71259c1b5669e1a5c36e95b60f6f81b552ce375e5",
+        "code": "import { TimePill } from '../components/time-pill';\nimport '../styles/frame.css';\n\nexport default function Example() {\n  return <div className=\"frame-root\"><div className=\"text-text-primary\"><TimePill time=\"2 minutes\" tooltip=\"Estimated review time\" /></div></div>;\n}\n",
+        "setup": "Copy complete source closure to src/components/frame; change the example import to ./components/frame/<slug> and CSS import to ./components/frame/frame.css. Render inside frame-root with a matching host surface."
+      }
+    },
+    {
+      "name": "StepIndicator",
+      "slug": "step-indicator",
+      "description": "Visual pending, active and completed workflow step marker; pair with a text label.",
+      "source": {
+        "commit": "125a6f6d993851f567b32578a4f6e48515930337",
+        "tree": "05cf4cdfface969115e2c4b0c376a0515ace4f01",
+        "path": "components/step-indicator.tsx",
+        "sha256": "99fd1005b7ab5bc79bac828d2e3f1a3e798930241e9006ebc93ff99660f9eca6",
+        "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/components/step-indicator.tsx"
+      },
+      "install": {
+        "primary": "npx shadcn@latest add @frame/step-indicator",
+        "primaryCollection": "npx shadcn@latest add @frame/frame",
+        "registry": "https://system.beibeidesign.com/r/{name}.json",
+        "single": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/step-indicator.json",
+        "collection": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/frame.json",
+        "shadcnVersion": "4.21.0",
+        "import": "./components/frame/step-indicator",
+        "dependencies": [
+          "react@19.2.5",
+          "react-dom@19.2.5",
+          "lucide-react@1.14.0"
+        ],
+        "files": [
+          {
+            "path": "components/step-indicator.tsx",
+            "target": "~/src/components/frame/step-indicator.tsx",
+            "sha256": "99fd1005b7ab5bc79bac828d2e3f1a3e798930241e9006ebc93ff99660f9eca6"
+          },
+          {
+            "path": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css",
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62"
+          }
+        ],
+        "css": "./components/frame/frame.css",
+        "cssVariants": {
+          "singleAndManual": {
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62",
+            "bytes": 32246,
+            "sourcePath": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css"
+          },
+          "collection": {
+            "sha256": "ec3dff7d31cd670881fe4585919e3800d0030eb80f7deb75c1cceccadf1c6837",
+            "bytes": 31762,
+            "sourcePath": "registry/frame.json#files[styles/frame.css]",
+            "target": "~/src/components/frame/frame.css",
+            "limitations": [
+              "Missing --motion-duration-normal, --motion-ease-decelerate, .message-appear/@keyframes frame-fadeInUp and .chip-selected additions. Do not rely on these additions for this installation route. No assertion of complete dynamic styling equivalence."
+            ]
+          }
+        },
+        "wrapper": "frame-root",
+        "dark": "dark class on wrapper or ancestor",
+        "license": "MIT; retain LICENSE and THIRD_PARTY_NOTICES.md with redistributed source",
+        "sourceCopy": true
+      },
+      "props": [
+        {
+          "name": "status",
+          "type": "'done' | 'in-progress' | 'pending'",
+          "required": true,
+          "defaults": []
+        }
+      ],
+      "callbacks": [],
+      "types": [],
+      "defaults": [],
+      "exports": [
+        "StepIndicator"
+      ],
+      "imports": [
+        "lucide-react"
+      ],
+      "nativeProps": {
+        "inherited": false,
+        "forwarding": "Only the declared props are accepted. React JSX intrinsic attributes (key) are framework semantics, not a native HTML prop passthrough."
+      },
+      "supportedStateProps": [
+        {
+          "name": "status",
+          "type": "'done' | 'in-progress' | 'pending'"
+        }
+      ],
+      "semantics": {
+        "name": "StepIndicator",
+        "slug": "step-indicator",
+        "sourcePath": "components/step-indicator.tsx",
+        "boundSourceHash": "99fd1005b7ab5bc79bac828d2e3f1a3e798930241e9006ebc93ff99660f9eca6",
+        "references": [
+          "status"
+        ],
+        "hostResponsibilities": [
+          "Host sets pending/active/done and provides an adjacent text label."
+        ],
+        "limitations": [
+          "Visual marker; no step navigation."
+        ]
+      },
+      "example": {
+        "path": "examples/step-indicator.tsx",
+        "sha256": "fa6aa4137bd377aba36353170ee0dcfd3ace302d0d643506b3c5bc47a4aa8a07",
+        "code": "import { StepIndicator } from '../components/step-indicator';\nimport '../styles/frame.css';\n\nexport default function Example() {\n  return <div className=\"frame-root\"><div className=\"text-text-primary\"><div className=\"flex items-center gap-2\"><StepIndicator status=\"done\" /><span>Draft reviewed</span></div></div></div>;\n}\n",
+        "setup": "Copy complete source closure to src/components/frame; change the example import to ./components/frame/<slug> and CSS import to ./components/frame/frame.css. Render inside frame-root with a matching host surface."
+      }
+    },
+    {
+      "name": "SecondaryButton",
+      "slug": "secondary-button",
+      "description": "Secondary action button for prompt or workflow decisions.",
+      "source": {
+        "commit": "125a6f6d993851f567b32578a4f6e48515930337",
+        "tree": "05cf4cdfface969115e2c4b0c376a0515ace4f01",
+        "path": "components/secondary-button.tsx",
+        "sha256": "29cb885cacd0e6621a16acb9a24e8e5268b40fee01ab49f5444296a24479a418",
+        "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/components/secondary-button.tsx"
+      },
+      "install": {
+        "primary": "npx shadcn@latest add @frame/secondary-button",
+        "primaryCollection": "npx shadcn@latest add @frame/frame",
+        "registry": "https://system.beibeidesign.com/r/{name}.json",
+        "single": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/secondary-button.json",
+        "collection": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/frame.json",
+        "shadcnVersion": "4.21.0",
+        "import": "./components/frame/secondary-button",
+        "dependencies": [
+          "react@19.2.5",
+          "react-dom@19.2.5",
+          "lucide-react@1.14.0"
+        ],
+        "files": [
+          {
+            "path": "components/secondary-button.tsx",
+            "target": "~/src/components/frame/secondary-button.tsx",
+            "sha256": "29cb885cacd0e6621a16acb9a24e8e5268b40fee01ab49f5444296a24479a418"
+          },
+          {
+            "path": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css",
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62"
+          }
+        ],
+        "css": "./components/frame/frame.css",
+        "cssVariants": {
+          "singleAndManual": {
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62",
+            "bytes": 32246,
+            "sourcePath": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css"
+          },
+          "collection": {
+            "sha256": "ec3dff7d31cd670881fe4585919e3800d0030eb80f7deb75c1cceccadf1c6837",
+            "bytes": 31762,
+            "sourcePath": "registry/frame.json#files[styles/frame.css]",
+            "target": "~/src/components/frame/frame.css",
+            "limitations": [
+              "Missing --motion-duration-normal, --motion-ease-decelerate, .message-appear/@keyframes frame-fadeInUp and .chip-selected additions. Do not rely on these additions for this installation route. No assertion of complete dynamic styling equivalence."
+            ]
+          }
+        },
+        "wrapper": "frame-root",
+        "dark": "dark class on wrapper or ancestor",
+        "license": "MIT; retain LICENSE and THIRD_PARTY_NOTICES.md with redistributed source",
+        "sourceCopy": true
+      },
+      "props": [
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "onClick",
+          "type": "() => void",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "type",
+          "type": "'button' | 'submit' | 'reset'",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "'button'",
+              "owner": "SecondaryButton"
+            }
+          ]
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "''",
+              "owner": "SecondaryButton"
+            }
+          ]
+        },
+        {
+          "name": "fullWidth",
+          "type": "boolean",
+          "required": false,
+          "defaults": []
+        }
+      ],
+      "callbacks": [
+        {
+          "path": "onClick",
+          "signature": "() => void",
+          "required": false
+        }
+      ],
+      "types": [],
+      "defaults": [
+        {
+          "prop": "type",
+          "expression": "'button'",
+          "owner": "SecondaryButton"
+        },
+        {
+          "prop": "className",
+          "expression": "''",
+          "owner": "SecondaryButton"
+        }
+      ],
+      "exports": [
+        "SecondaryButton"
+      ],
+      "imports": [
+        "react"
+      ],
+      "nativeProps": {
+        "inherited": false,
+        "forwarding": "Only the declared props are accepted. React JSX intrinsic attributes (key) are framework semantics, not a native HTML prop passthrough."
+      },
+      "supportedStateProps": [
+        {
+          "name": "disabled",
+          "type": "boolean"
+        }
+      ],
+      "semantics": {
+        "name": "SecondaryButton",
+        "slug": "secondary-button",
+        "sourcePath": "components/secondary-button.tsx",
+        "boundSourceHash": "29cb885cacd0e6621a16acb9a24e8e5268b40fee01ab49f5444296a24479a418",
+        "references": [
+          "onClick",
+          "type",
+          "disabled"
+        ],
+        "hostResponsibilities": [
+          "Host handles click or form submission; type explicitly defaults to button."
+        ],
+        "limitations": [
+          "Only declared props are accepted; no arbitrary native button prop forwarding."
+        ]
+      },
+      "example": {
+        "path": "examples/secondary-button.tsx",
+        "sha256": "f6c71ad8b7e3ab13885606fa9b8649efcb563dc7f781b702c4804c4de6840ecb",
+        "code": "import { SecondaryButton } from '../components/secondary-button';\nimport '../styles/frame.css';\n\nexport default function Example() {\n  return <div className=\"frame-root\"><div className=\"text-text-primary\"><SecondaryButton disabled>Review unavailable</SecondaryButton></div></div>;\n}\n",
+        "setup": "Copy complete source closure to src/components/frame; change the example import to ./components/frame/<slug> and CSS import to ./components/frame/frame.css. Render inside frame-root with a matching host surface."
+      }
+    },
+    {
+      "name": "TertiaryButton",
+      "slug": "tertiary-button",
+      "description": "Outlined action button for quieter conversation and workflow actions.",
+      "source": {
+        "commit": "125a6f6d993851f567b32578a4f6e48515930337",
+        "tree": "05cf4cdfface969115e2c4b0c376a0515ace4f01",
+        "path": "components/tertiary-button.tsx",
+        "sha256": "6e61f29ad19a00b345bfc93c6675cd8449801daf4de1fc3930be9927218d0cf4",
+        "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/components/tertiary-button.tsx"
+      },
+      "install": {
+        "primary": "npx shadcn@latest add @frame/tertiary-button",
+        "primaryCollection": "npx shadcn@latest add @frame/frame",
+        "registry": "https://system.beibeidesign.com/r/{name}.json",
+        "single": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/tertiary-button.json",
+        "collection": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/frame.json",
+        "shadcnVersion": "4.21.0",
+        "import": "./components/frame/tertiary-button",
+        "dependencies": [
+          "react@19.2.5",
+          "react-dom@19.2.5",
+          "lucide-react@1.14.0"
+        ],
+        "files": [
+          {
+            "path": "components/tertiary-button.tsx",
+            "target": "~/src/components/frame/tertiary-button.tsx",
+            "sha256": "6e61f29ad19a00b345bfc93c6675cd8449801daf4de1fc3930be9927218d0cf4"
+          },
+          {
+            "path": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css",
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62"
+          }
+        ],
+        "css": "./components/frame/frame.css",
+        "cssVariants": {
+          "singleAndManual": {
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62",
+            "bytes": 32246,
+            "sourcePath": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css"
+          },
+          "collection": {
+            "sha256": "ec3dff7d31cd670881fe4585919e3800d0030eb80f7deb75c1cceccadf1c6837",
+            "bytes": 31762,
+            "sourcePath": "registry/frame.json#files[styles/frame.css]",
+            "target": "~/src/components/frame/frame.css",
+            "limitations": [
+              "Missing --motion-duration-normal, --motion-ease-decelerate, .message-appear/@keyframes frame-fadeInUp and .chip-selected additions. Do not rely on these additions for this installation route. No assertion of complete dynamic styling equivalence."
+            ]
+          }
+        },
+        "wrapper": "frame-root",
+        "dark": "dark class on wrapper or ancestor",
+        "license": "MIT; retain LICENSE and THIRD_PARTY_NOTICES.md with redistributed source",
+        "sourceCopy": true
+      },
+      "props": [
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "onClick",
+          "type": "() => void",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "type",
+          "type": "'button' | 'submit' | 'reset'",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "'button'",
+              "owner": "TertiaryButton"
+            }
+          ]
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "''",
+              "owner": "TertiaryButton"
+            }
+          ]
+        },
+        {
+          "name": "fullWidth",
+          "type": "boolean",
+          "required": false,
+          "defaults": []
+        }
+      ],
+      "callbacks": [
+        {
+          "path": "onClick",
+          "signature": "() => void",
+          "required": false
+        }
+      ],
+      "types": [],
+      "defaults": [
+        {
+          "prop": "type",
+          "expression": "'button'",
+          "owner": "TertiaryButton"
+        },
+        {
+          "prop": "className",
+          "expression": "''",
+          "owner": "TertiaryButton"
+        }
+      ],
+      "exports": [
+        "TertiaryButton"
+      ],
+      "imports": [
+        "react"
+      ],
+      "nativeProps": {
+        "inherited": false,
+        "forwarding": "Only the declared props are accepted. React JSX intrinsic attributes (key) are framework semantics, not a native HTML prop passthrough."
+      },
+      "supportedStateProps": [
+        {
+          "name": "disabled",
+          "type": "boolean"
+        }
+      ],
+      "semantics": {
+        "name": "TertiaryButton",
+        "slug": "tertiary-button",
+        "sourcePath": "components/tertiary-button.tsx",
+        "boundSourceHash": "6e61f29ad19a00b345bfc93c6675cd8449801daf4de1fc3930be9927218d0cf4",
+        "references": [
+          "onClick",
+          "type",
+          "disabled"
+        ],
+        "hostResponsibilities": [
+          "Host handles click or form submission; type explicitly defaults to button."
+        ],
+        "limitations": [
+          "Only declared props are accepted; no arbitrary native button prop forwarding."
+        ]
+      },
+      "example": {
+        "path": "examples/tertiary-button.tsx",
+        "sha256": "17e72e7e64ecf46e773915fabf4c57ac065e70d87d319f24c13f82d955bacc99",
+        "code": "import { TertiaryButton } from '../components/tertiary-button';\nimport '../styles/frame.css';\n\nexport default function Example() {\n  return <div className=\"frame-root\"><div className=\"text-text-primary\"><TertiaryButton disabled>Export unavailable</TertiaryButton></div></div>;\n}\n",
+        "setup": "Copy complete source closure to src/components/frame; change the example import to ./components/frame/<slug> and CSS import to ./components/frame/frame.css. Render inside frame-root with a matching host surface."
+      }
+    },
+    {
+      "name": "GhostPillButton",
+      "slug": "ghost-pill-button",
+      "description": "Pill-shaped secondary action with optional icon and disabled state.",
+      "source": {
+        "commit": "125a6f6d993851f567b32578a4f6e48515930337",
+        "tree": "05cf4cdfface969115e2c4b0c376a0515ace4f01",
+        "path": "components/ghost-pill-button.tsx",
+        "sha256": "6c539cf4057a2f2d9ce65966ca8c4945007cbca69dbb98848dc0662ef33bce6c",
+        "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/components/ghost-pill-button.tsx"
+      },
+      "install": {
+        "primary": "npx shadcn@latest add @frame/ghost-pill-button",
+        "primaryCollection": "npx shadcn@latest add @frame/frame",
+        "registry": "https://system.beibeidesign.com/r/{name}.json",
+        "single": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/ghost-pill-button.json",
+        "collection": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/frame.json",
+        "shadcnVersion": "4.21.0",
+        "import": "./components/frame/ghost-pill-button",
+        "dependencies": [
+          "react@19.2.5",
+          "react-dom@19.2.5",
+          "lucide-react@1.14.0"
+        ],
+        "files": [
+          {
+            "path": "components/ghost-pill-button.tsx",
+            "target": "~/src/components/frame/ghost-pill-button.tsx",
+            "sha256": "6c539cf4057a2f2d9ce65966ca8c4945007cbca69dbb98848dc0662ef33bce6c"
+          },
+          {
+            "path": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css",
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62"
+          }
+        ],
+        "css": "./components/frame/frame.css",
+        "cssVariants": {
+          "singleAndManual": {
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62",
+            "bytes": 32246,
+            "sourcePath": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css"
+          },
+          "collection": {
+            "sha256": "ec3dff7d31cd670881fe4585919e3800d0030eb80f7deb75c1cceccadf1c6837",
+            "bytes": 31762,
+            "sourcePath": "registry/frame.json#files[styles/frame.css]",
+            "target": "~/src/components/frame/frame.css",
+            "limitations": [
+              "Missing --motion-duration-normal, --motion-ease-decelerate, .message-appear/@keyframes frame-fadeInUp and .chip-selected additions. Do not rely on these additions for this installation route. No assertion of complete dynamic styling equivalence."
+            ]
+          }
+        },
+        "wrapper": "frame-root",
+        "dark": "dark class on wrapper or ancestor",
+        "license": "MIT; retain LICENSE and THIRD_PARTY_NOTICES.md with redistributed source",
+        "sourceCopy": true
+      },
+      "props": [
+        {
+          "name": "onClick",
+          "type": "() => void",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "icon",
+          "type": "ReactNode",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "ariaLabel",
+          "type": "string",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "size",
+          "type": "'md' | 'sm'",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "'md'",
+              "owner": "GhostPillButton"
+            }
+          ]
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "''",
+              "owner": "GhostPillButton"
+            }
+          ]
+        }
+      ],
+      "callbacks": [
+        {
+          "path": "onClick",
+          "signature": "() => void",
+          "required": false
+        }
+      ],
+      "types": [],
+      "defaults": [
+        {
+          "prop": "size",
+          "expression": "'md'",
+          "owner": "GhostPillButton"
+        },
+        {
+          "prop": "className",
+          "expression": "''",
+          "owner": "GhostPillButton"
+        }
+      ],
+      "exports": [
+        "GhostPillButton"
+      ],
+      "imports": [
+        "react"
+      ],
+      "nativeProps": {
+        "inherited": false,
+        "forwarding": "Only the declared props are accepted. React JSX intrinsic attributes (key) are framework semantics, not a native HTML prop passthrough."
+      },
+      "supportedStateProps": [
+        {
+          "name": "disabled",
+          "type": "boolean"
+        }
+      ],
+      "semantics": {
+        "name": "GhostPillButton",
+        "slug": "ghost-pill-button",
+        "sourcePath": "components/ghost-pill-button.tsx",
+        "boundSourceHash": "6c539cf4057a2f2d9ce65966ca8c4945007cbca69dbb98848dc0662ef33bce6c",
+        "references": [
+          "onClick",
+          "disabled",
+          "ariaLabel"
+        ],
+        "hostResponsibilities": [
+          "Host handles action and supplies an accessible name; enlarge small hit areas for mobile."
+        ],
+        "limitations": [
+          "No loading or error prop; no arbitrary native button prop forwarding."
+        ]
+      },
+      "example": {
+        "path": "examples/ghost-pill-button.tsx",
+        "sha256": "3ae79baba695dffa92e68c854ff89b05380d16cb34c52bb7cc98432b0fed52cb",
+        "code": "import { GhostPillButton } from '../components/ghost-pill-button';\nimport '../styles/frame.css';\n\nexport default function Example() {\n  return <div className=\"frame-root\"><div className=\"text-text-primary\"><GhostPillButton className=\"min-h-11\" disabled>Save draft</GhostPillButton></div></div>;\n}\n",
+        "setup": "Copy complete source closure to src/components/frame; change the example import to ./components/frame/<slug> and CSS import to ./components/frame/frame.css. Render inside frame-root with a matching host surface."
+      }
+    },
+    {
+      "name": "HeaderIconButton",
+      "slug": "header-icon-button",
+      "description": "Named icon action for conversation headers; size the mobile hit area to at least 44 pixels.",
+      "source": {
+        "commit": "125a6f6d993851f567b32578a4f6e48515930337",
+        "tree": "05cf4cdfface969115e2c4b0c376a0515ace4f01",
+        "path": "components/header-icon-button.tsx",
+        "sha256": "3d494fbf2fc21b6884bc388fa8ff65de726c9c0b96c74805318c8c01909f6209",
+        "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/components/header-icon-button.tsx"
+      },
+      "install": {
+        "primary": "npx shadcn@latest add @frame/header-icon-button",
+        "primaryCollection": "npx shadcn@latest add @frame/frame",
+        "registry": "https://system.beibeidesign.com/r/{name}.json",
+        "single": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/header-icon-button.json",
+        "collection": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/frame.json",
+        "shadcnVersion": "4.21.0",
+        "import": "./components/frame/header-icon-button",
+        "dependencies": [
+          "react@19.2.5",
+          "react-dom@19.2.5",
+          "lucide-react@1.14.0"
+        ],
+        "files": [
+          {
+            "path": "components/header-icon-button.tsx",
+            "target": "~/src/components/frame/header-icon-button.tsx",
+            "sha256": "3d494fbf2fc21b6884bc388fa8ff65de726c9c0b96c74805318c8c01909f6209"
+          },
+          {
+            "path": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css",
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62"
+          }
+        ],
+        "css": "./components/frame/frame.css",
+        "cssVariants": {
+          "singleAndManual": {
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62",
+            "bytes": 32246,
+            "sourcePath": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css"
+          },
+          "collection": {
+            "sha256": "ec3dff7d31cd670881fe4585919e3800d0030eb80f7deb75c1cceccadf1c6837",
+            "bytes": 31762,
+            "sourcePath": "registry/frame.json#files[styles/frame.css]",
+            "target": "~/src/components/frame/frame.css",
+            "limitations": [
+              "Missing --motion-duration-normal, --motion-ease-decelerate, .message-appear/@keyframes frame-fadeInUp and .chip-selected additions. Do not rely on these additions for this installation route. No assertion of complete dynamic styling equivalence."
+            ]
+          }
+        },
+        "wrapper": "frame-root",
+        "dark": "dark class on wrapper or ancestor",
+        "license": "MIT; retain LICENSE and THIRD_PARTY_NOTICES.md with redistributed source",
+        "sourceCopy": true
+      },
+      "props": [
+        {
+          "name": "onClick",
+          "type": "() => void",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "ariaLabel",
+          "type": "string",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "''",
+              "owner": "HeaderIconButton"
+            }
+          ]
+        }
+      ],
+      "callbacks": [
+        {
+          "path": "onClick",
+          "signature": "() => void",
+          "required": false
+        }
+      ],
+      "types": [],
+      "defaults": [
+        {
+          "prop": "className",
+          "expression": "''",
+          "owner": "HeaderIconButton"
+        }
+      ],
+      "exports": [
+        "HeaderIconButton"
+      ],
+      "imports": [
+        "react"
+      ],
+      "nativeProps": {
+        "inherited": false,
+        "forwarding": "Only the declared props are accepted. React JSX intrinsic attributes (key) are framework semantics, not a native HTML prop passthrough."
+      },
+      "supportedStateProps": [],
+      "semantics": {
+        "name": "HeaderIconButton",
+        "slug": "header-icon-button",
+        "sourcePath": "components/header-icon-button.tsx",
+        "boundSourceHash": "3d494fbf2fc21b6884bc388fa8ff65de726c9c0b96c74805318c8c01909f6209",
+        "references": [
+          "onClick",
+          "ariaLabel"
+        ],
+        "hostResponsibilities": [
+          "Host supplies accessible name and at least a 44px mobile hit area."
+        ],
+        "limitations": [
+          "No disabled prop and no arbitrary native button prop forwarding."
+        ]
+      },
+      "example": {
+        "path": "examples/header-icon-button.tsx",
+        "sha256": "a517cb9959bad2d88de2a26d43f752575d0f555dfced81b532bc45c7074e8ebb",
+        "code": "import { Info } from 'lucide-react';\nimport { HeaderIconButton } from '../components/header-icon-button';\nimport '../styles/frame.css';\n\nexport default function Example() {\n  return <div className=\"frame-root\"><div className=\"text-text-primary\"><HeaderIconButton ariaLabel=\"Conversation details\" className=\"min-h-11 min-w-11\" onClick={() => {}}><Info size={20} /></HeaderIconButton></div></div>;\n}\n",
+        "setup": "Copy complete source closure to src/components/frame; change the example import to ./components/frame/<slug> and CSS import to ./components/frame/frame.css. Render inside frame-root with a matching host surface."
+      }
+    },
+    {
+      "name": "MenuRow",
+      "slug": "menu-row",
+      "description": "Workflow or conversation selection row with optional secondary text and current state.",
+      "source": {
+        "commit": "125a6f6d993851f567b32578a4f6e48515930337",
+        "tree": "05cf4cdfface969115e2c4b0c376a0515ace4f01",
+        "path": "components/menu-row.tsx",
+        "sha256": "2bbc89c7eeaf70b275c4968fd29a8f26667e60ad00df8359a82895acb793f189",
+        "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/components/menu-row.tsx"
+      },
+      "install": {
+        "primary": "npx shadcn@latest add @frame/menu-row",
+        "primaryCollection": "npx shadcn@latest add @frame/frame",
+        "registry": "https://system.beibeidesign.com/r/{name}.json",
+        "single": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/menu-row.json",
+        "collection": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/frame.json",
+        "shadcnVersion": "4.21.0",
+        "import": "./components/frame/menu-row",
+        "dependencies": [
+          "react@19.2.5",
+          "react-dom@19.2.5",
+          "lucide-react@1.14.0"
+        ],
+        "files": [
+          {
+            "path": "components/menu-row.tsx",
+            "target": "~/src/components/frame/menu-row.tsx",
+            "sha256": "2bbc89c7eeaf70b275c4968fd29a8f26667e60ad00df8359a82895acb793f189"
+          },
+          {
+            "path": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css",
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62"
+          }
+        ],
+        "css": "./components/frame/frame.css",
+        "cssVariants": {
+          "singleAndManual": {
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62",
+            "bytes": 32246,
+            "sourcePath": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css"
+          },
+          "collection": {
+            "sha256": "ec3dff7d31cd670881fe4585919e3800d0030eb80f7deb75c1cceccadf1c6837",
+            "bytes": 31762,
+            "sourcePath": "registry/frame.json#files[styles/frame.css]",
+            "target": "~/src/components/frame/frame.css",
+            "limitations": [
+              "Missing --motion-duration-normal, --motion-ease-decelerate, .message-appear/@keyframes frame-fadeInUp and .chip-selected additions. Do not rely on these additions for this installation route. No assertion of complete dynamic styling equivalence."
+            ]
+          }
+        },
+        "wrapper": "frame-root",
+        "dark": "dark class on wrapper or ancestor",
+        "license": "MIT; retain LICENSE and THIRD_PARTY_NOTICES.md with redistributed source",
+        "sourceCopy": true
+      },
+      "props": [
+        {
+          "name": "icon",
+          "type": "ReactNode",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "label",
+          "type": "ReactNode",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "sublabel",
+          "type": "ReactNode",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "onClick",
+          "type": "() => void",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "trailing",
+          "type": "ReactNode",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "active",
+          "type": "boolean",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "false",
+              "owner": "MenuRow"
+            }
+          ]
+        },
+        {
+          "name": "muted",
+          "type": "boolean",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "false",
+              "owner": "MenuRow"
+            }
+          ]
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "''",
+              "owner": "MenuRow"
+            }
+          ]
+        }
+      ],
+      "callbacks": [
+        {
+          "path": "onClick",
+          "signature": "() => void",
+          "required": false
+        }
+      ],
+      "types": [],
+      "defaults": [
+        {
+          "prop": "active",
+          "expression": "false",
+          "owner": "MenuRow"
+        },
+        {
+          "prop": "muted",
+          "expression": "false",
+          "owner": "MenuRow"
+        },
+        {
+          "prop": "className",
+          "expression": "''",
+          "owner": "MenuRow"
+        }
+      ],
+      "exports": [
+        "MenuRow"
+      ],
+      "imports": [
+        "react"
+      ],
+      "nativeProps": {
+        "inherited": false,
+        "forwarding": "Only the declared props are accepted. React JSX intrinsic attributes (key) are framework semantics, not a native HTML prop passthrough."
+      },
+      "supportedStateProps": [
+        {
+          "name": "active",
+          "type": "boolean"
+        }
+      ],
+      "semantics": {
+        "name": "MenuRow",
+        "slug": "menu-row",
+        "sourcePath": "components/menu-row.tsx",
+        "boundSourceHash": "2bbc89c7eeaf70b275c4968fd29a8f26667e60ad00df8359a82895acb793f189",
+        "references": [
+          "label",
+          "active",
+          "onClick"
+        ],
+        "hostResponsibilities": [
+          "Host chooses active row and handles click; enlarge hit area for mobile."
+        ],
+        "limitations": [
+          "No disabled prop, keyboard menu controller or automatic selection state."
+        ]
+      },
+      "example": {
+        "path": "examples/menu-row.tsx",
+        "sha256": "afd7521c0254e1aee9916c4f36b38a3479bf7346b6a3017d295dba1da60b4800",
+        "code": "import { MenuRow } from '../components/menu-row';\nimport '../styles/frame.css';\n\nexport default function Example() {\n  return <div className=\"frame-root\"><div className=\"text-text-primary\"><MenuRow label=\"Current conversation\" sublabel=\"Ready to review\" active className=\"min-h-11\" /></div></div>;\n}\n",
+        "setup": "Copy complete source closure to src/components/frame; change the example import to ./components/frame/<slug> and CSS import to ./components/frame/frame.css. Render inside frame-root with a matching host surface."
+      }
+    },
+    {
+      "name": "IconBadge",
+      "slug": "icon-badge",
+      "description": "Decorative icon badge for message context or workflow groups; not an interactive control.",
+      "source": {
+        "commit": "125a6f6d993851f567b32578a4f6e48515930337",
+        "tree": "05cf4cdfface969115e2c4b0c376a0515ace4f01",
+        "path": "components/icon-badge.tsx",
+        "sha256": "da1b64e9a8d9f4dde79630bdfdc45394f0e79863aafca7f9e73b9e0d6e1597b7",
+        "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/components/icon-badge.tsx"
+      },
+      "install": {
+        "primary": "npx shadcn@latest add @frame/icon-badge",
+        "primaryCollection": "npx shadcn@latest add @frame/frame",
+        "registry": "https://system.beibeidesign.com/r/{name}.json",
+        "single": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/icon-badge.json",
+        "collection": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/frame.json",
+        "shadcnVersion": "4.21.0",
+        "import": "./components/frame/icon-badge",
+        "dependencies": [
+          "react@19.2.5",
+          "react-dom@19.2.5",
+          "lucide-react@1.14.0"
+        ],
+        "files": [
+          {
+            "path": "components/icon-badge.tsx",
+            "target": "~/src/components/frame/icon-badge.tsx",
+            "sha256": "da1b64e9a8d9f4dde79630bdfdc45394f0e79863aafca7f9e73b9e0d6e1597b7"
+          },
+          {
+            "path": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css",
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62"
+          }
+        ],
+        "css": "./components/frame/frame.css",
+        "cssVariants": {
+          "singleAndManual": {
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62",
+            "bytes": 32246,
+            "sourcePath": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css"
+          },
+          "collection": {
+            "sha256": "ec3dff7d31cd670881fe4585919e3800d0030eb80f7deb75c1cceccadf1c6837",
+            "bytes": 31762,
+            "sourcePath": "registry/frame.json#files[styles/frame.css]",
+            "target": "~/src/components/frame/frame.css",
+            "limitations": [
+              "Missing --motion-duration-normal, --motion-ease-decelerate, .message-appear/@keyframes frame-fadeInUp and .chip-selected additions. Do not rely on these additions for this installation route. No assertion of complete dynamic styling equivalence."
+            ]
+          }
+        },
+        "wrapper": "frame-root",
+        "dark": "dark class on wrapper or ancestor",
+        "license": "MIT; retain LICENSE and THIRD_PARTY_NOTICES.md with redistributed source",
+        "sourceCopy": true
+      },
+      "props": [
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "size",
+          "type": "number",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "40",
+              "owner": "IconBadge"
+            }
+          ]
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "''",
+              "owner": "IconBadge"
+            }
+          ]
+        }
+      ],
+      "callbacks": [],
+      "types": [],
+      "defaults": [
+        {
+          "prop": "size",
+          "expression": "40",
+          "owner": "IconBadge"
+        },
+        {
+          "prop": "className",
+          "expression": "''",
+          "owner": "IconBadge"
+        }
+      ],
+      "exports": [
+        "IconBadge"
+      ],
+      "imports": [
+        "react"
+      ],
+      "nativeProps": {
+        "inherited": false,
+        "forwarding": "Only the declared props are accepted. React JSX intrinsic attributes (key) are framework semantics, not a native HTML prop passthrough."
+      },
+      "supportedStateProps": [],
+      "semantics": {
+        "name": "IconBadge",
+        "slug": "icon-badge",
+        "sourcePath": "components/icon-badge.tsx",
+        "boundSourceHash": "da1b64e9a8d9f4dde79630bdfdc45394f0e79863aafca7f9e73b9e0d6e1597b7",
+        "references": [
+          "children",
+          "size"
+        ],
+        "hostResponsibilities": [
+          "Host supplies decorative icon content."
+        ],
+        "limitations": [
+          "Not an interactive control."
+        ]
+      },
+      "example": {
+        "path": "examples/icon-badge.tsx",
+        "sha256": "252f88f6dae1d4840a5ba4e6b59b013818bb65526a91201be1ce52c1fe1383a8",
+        "code": "import { Sparkles } from 'lucide-react';\nimport { IconBadge } from '../components/icon-badge';\nimport '../styles/frame.css';\n\nexport default function Example() {\n  return <div className=\"frame-root\"><div className=\"text-text-primary\"><IconBadge><Sparkles size={20} /></IconBadge></div></div>;\n}\n",
+        "setup": "Copy complete source closure to src/components/frame; change the example import to ./components/frame/<slug> and CSS import to ./components/frame/frame.css. Render inside frame-root with a matching host surface."
+      }
+    },
+    {
+      "name": "TextButton",
+      "slug": "text-button",
+      "description": "Quiet text action with disabled and disclosure attributes.",
+      "source": {
+        "commit": "125a6f6d993851f567b32578a4f6e48515930337",
+        "tree": "05cf4cdfface969115e2c4b0c376a0515ace4f01",
+        "path": "components/text-button.tsx",
+        "sha256": "6fb38b82fc1bfe6d3b850416b860ff419cf396fe7a3387f7596056f9e1a577f1",
+        "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/components/text-button.tsx"
+      },
+      "install": {
+        "primary": "npx shadcn@latest add @frame/text-button",
+        "primaryCollection": "npx shadcn@latest add @frame/frame",
+        "registry": "https://system.beibeidesign.com/r/{name}.json",
+        "single": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/text-button.json",
+        "collection": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/frame.json",
+        "shadcnVersion": "4.21.0",
+        "import": "./components/frame/text-button",
+        "dependencies": [
+          "react@19.2.5",
+          "react-dom@19.2.5",
+          "lucide-react@1.14.0"
+        ],
+        "files": [
+          {
+            "path": "components/text-button.tsx",
+            "target": "~/src/components/frame/text-button.tsx",
+            "sha256": "6fb38b82fc1bfe6d3b850416b860ff419cf396fe7a3387f7596056f9e1a577f1"
+          },
+          {
+            "path": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css",
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62"
+          }
+        ],
+        "css": "./components/frame/frame.css",
+        "cssVariants": {
+          "singleAndManual": {
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62",
+            "bytes": 32246,
+            "sourcePath": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css"
+          },
+          "collection": {
+            "sha256": "ec3dff7d31cd670881fe4585919e3800d0030eb80f7deb75c1cceccadf1c6837",
+            "bytes": 31762,
+            "sourcePath": "registry/frame.json#files[styles/frame.css]",
+            "target": "~/src/components/frame/frame.css",
+            "limitations": [
+              "Missing --motion-duration-normal, --motion-ease-decelerate, .message-appear/@keyframes frame-fadeInUp and .chip-selected additions. Do not rely on these additions for this installation route. No assertion of complete dynamic styling equivalence."
+            ]
+          }
+        },
+        "wrapper": "frame-root",
+        "dark": "dark class on wrapper or ancestor",
+        "license": "MIT; retain LICENSE and THIRD_PARTY_NOTICES.md with redistributed source",
+        "sourceCopy": true
+      },
+      "props": [
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "onClick",
+          "type": "() => void",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "tone",
+          "type": "'secondary' | 'primary'",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "'secondary'",
+              "owner": "TextButton"
+            }
+          ]
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "''",
+              "owner": "TextButton"
+            }
+          ]
+        },
+        {
+          "name": "ariaExpanded",
+          "type": "boolean",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "ariaControls",
+          "type": "string",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "buttonRef",
+          "type": "Ref<HTMLButtonElement>",
+          "required": false,
+          "defaults": []
+        }
+      ],
+      "callbacks": [
+        {
+          "path": "onClick",
+          "signature": "() => void",
+          "required": false
+        }
+      ],
+      "types": [],
+      "defaults": [
+        {
+          "prop": "tone",
+          "expression": "'secondary'",
+          "owner": "TextButton"
+        },
+        {
+          "prop": "className",
+          "expression": "''",
+          "owner": "TextButton"
+        }
+      ],
+      "exports": [
+        "TextButton"
+      ],
+      "imports": [
+        "react"
+      ],
+      "nativeProps": {
+        "inherited": false,
+        "forwarding": "Only the declared props are accepted. React JSX intrinsic attributes (key) are framework semantics, not a native HTML prop passthrough."
+      },
+      "supportedStateProps": [
+        {
+          "name": "disabled",
+          "type": "boolean"
+        },
+        {
+          "name": "ariaExpanded",
+          "type": "boolean"
+        }
+      ],
+      "semantics": {
+        "name": "TextButton",
+        "slug": "text-button",
+        "sourcePath": "components/text-button.tsx",
+        "boundSourceHash": "6fb38b82fc1bfe6d3b850416b860ff419cf396fe7a3387f7596056f9e1a577f1",
+        "references": [
+          "onClick",
+          "disabled",
+          "ariaExpanded",
+          "ariaControls"
+        ],
+        "hostResponsibilities": [
+          "Host handles action and manages disclosure state/target when supplied."
+        ],
+        "limitations": [
+          "No arbitrary native button prop forwarding; type is internally button."
+        ]
+      },
+      "example": {
+        "path": "examples/text-button.tsx",
+        "sha256": "46059597d8bdc69666512a8b79c9a1092bc7d91222112406b8a71f0ba1796f26",
+        "code": "import { TextButton } from '../components/text-button';\nimport '../styles/frame.css';\n\nexport default function Example() {\n  return <div className=\"frame-root\"><div className=\"text-text-primary\"><TextButton className=\"min-h-11\" disabled>Continue later</TextButton></div></div>;\n}\n",
+        "setup": "Copy complete source closure to src/components/frame; change the example import to ./components/frame/<slug> and CSS import to ./components/frame/frame.css. Render inside frame-root with a matching host surface."
+      }
+    },
+    {
+      "name": "UtilityChip",
+      "slug": "utility-chip",
+      "description": "Compact context action with optional pressed state for prompt toolbars.",
+      "source": {
+        "commit": "125a6f6d993851f567b32578a4f6e48515930337",
+        "tree": "05cf4cdfface969115e2c4b0c376a0515ace4f01",
+        "path": "components/utility-chip.tsx",
+        "sha256": "eead1a3c18f80ef39d017e8c4eff510420ed997fe22d776ddc9f9bdc52d84a0f",
+        "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/components/utility-chip.tsx"
+      },
+      "install": {
+        "primary": "npx shadcn@latest add @frame/utility-chip",
+        "primaryCollection": "npx shadcn@latest add @frame/frame",
+        "registry": "https://system.beibeidesign.com/r/{name}.json",
+        "single": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/utility-chip.json",
+        "collection": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/frame.json",
+        "shadcnVersion": "4.21.0",
+        "import": "./components/frame/utility-chip",
+        "dependencies": [
+          "react@19.2.5",
+          "react-dom@19.2.5",
+          "lucide-react@1.14.0"
+        ],
+        "files": [
+          {
+            "path": "components/utility-chip.tsx",
+            "target": "~/src/components/frame/utility-chip.tsx",
+            "sha256": "eead1a3c18f80ef39d017e8c4eff510420ed997fe22d776ddc9f9bdc52d84a0f"
+          },
+          {
+            "path": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css",
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62"
+          }
+        ],
+        "css": "./components/frame/frame.css",
+        "cssVariants": {
+          "singleAndManual": {
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62",
+            "bytes": 32246,
+            "sourcePath": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css"
+          },
+          "collection": {
+            "sha256": "ec3dff7d31cd670881fe4585919e3800d0030eb80f7deb75c1cceccadf1c6837",
+            "bytes": 31762,
+            "sourcePath": "registry/frame.json#files[styles/frame.css]",
+            "target": "~/src/components/frame/frame.css",
+            "limitations": [
+              "Missing --motion-duration-normal, --motion-ease-decelerate, .message-appear/@keyframes frame-fadeInUp and .chip-selected additions. Do not rely on these additions for this installation route. No assertion of complete dynamic styling equivalence."
+            ]
+          }
+        },
+        "wrapper": "frame-root",
+        "dark": "dark class on wrapper or ancestor",
+        "license": "MIT; retain LICENSE and THIRD_PARTY_NOTICES.md with redistributed source",
+        "sourceCopy": true
+      },
+      "props": [
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "icon",
+          "type": "ReactNode",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "onClick",
+          "type": "(e: ReactMouseEvent<HTMLButtonElement>) => void",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "ariaLabel",
+          "type": "string",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "ariaPressed",
+          "type": "boolean",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "maxWidth",
+          "type": "number | string",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "''",
+              "owner": "UtilityChip"
+            }
+          ]
+        }
+      ],
+      "callbacks": [
+        {
+          "path": "onClick",
+          "signature": "(e: ReactMouseEvent<HTMLButtonElement>) => void",
+          "required": false
+        }
+      ],
+      "types": [],
+      "defaults": [
+        {
+          "prop": "className",
+          "expression": "''",
+          "owner": "UtilityChip"
+        }
+      ],
+      "exports": [
+        "UtilityChip"
+      ],
+      "imports": [
+        "react"
+      ],
+      "nativeProps": {
+        "inherited": false,
+        "forwarding": "Only the declared props are accepted. React JSX intrinsic attributes (key) are framework semantics, not a native HTML prop passthrough."
+      },
+      "supportedStateProps": [
+        {
+          "name": "ariaPressed",
+          "type": "boolean"
+        }
+      ],
+      "semantics": {
+        "name": "UtilityChip",
+        "slug": "utility-chip",
+        "sourcePath": "components/utility-chip.tsx",
+        "boundSourceHash": "eead1a3c18f80ef39d017e8c4eff510420ed997fe22d776ddc9f9bdc52d84a0f",
+        "references": [
+          "onClick",
+          "ariaPressed",
+          "ariaLabel"
+        ],
+        "hostResponsibilities": [
+          "Host manages pressed state and action; supply accessible name and mobile hit area."
+        ],
+        "limitations": [
+          "No disabled prop; no automatic toggling."
+        ]
+      },
+      "example": {
+        "path": "examples/utility-chip.tsx",
+        "sha256": "ed0af107d6d9dcf4839525caf3e872a40827c2d7db5e70918e8247170fb6a861",
+        "code": "import { UtilityChip } from '../components/utility-chip';\nimport '../styles/frame.css';\n\nexport default function Example() {\n  return <div className=\"frame-root\"><div className=\"text-text-primary\"><UtilityChip className=\"min-h-11\" ariaPressed={true}>Local context</UtilityChip></div></div>;\n}\n",
+        "setup": "Copy complete source closure to src/components/frame; change the example import to ./components/frame/<slug> and CSS import to ./components/frame/frame.css. Render inside frame-root with a matching host surface."
+      }
+    },
+    {
+      "name": "SummaryFooter",
+      "slug": "summary-footer",
+      "description": "Compact elapsed-time or summary line beneath a conversation result.",
+      "source": {
+        "commit": "125a6f6d993851f567b32578a4f6e48515930337",
+        "tree": "05cf4cdfface969115e2c4b0c376a0515ace4f01",
+        "path": "components/summary-footer.tsx",
+        "sha256": "bf4f93b77c82f2d9956e02dcae32f3e4018ffb8aa90cfded2632d0c5a434c7aa",
+        "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/components/summary-footer.tsx"
+      },
+      "install": {
+        "primary": "npx shadcn@latest add @frame/summary-footer",
+        "primaryCollection": "npx shadcn@latest add @frame/frame",
+        "registry": "https://system.beibeidesign.com/r/{name}.json",
+        "single": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/summary-footer.json",
+        "collection": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/frame.json",
+        "shadcnVersion": "4.21.0",
+        "import": "./components/frame/summary-footer",
+        "dependencies": [
+          "react@19.2.5",
+          "react-dom@19.2.5",
+          "lucide-react@1.14.0"
+        ],
+        "files": [
+          {
+            "path": "components/summary-footer.tsx",
+            "target": "~/src/components/frame/summary-footer.tsx",
+            "sha256": "bf4f93b77c82f2d9956e02dcae32f3e4018ffb8aa90cfded2632d0c5a434c7aa"
+          },
+          {
+            "path": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css",
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62"
+          }
+        ],
+        "css": "./components/frame/frame.css",
+        "cssVariants": {
+          "singleAndManual": {
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62",
+            "bytes": 32246,
+            "sourcePath": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css"
+          },
+          "collection": {
+            "sha256": "ec3dff7d31cd670881fe4585919e3800d0030eb80f7deb75c1cceccadf1c6837",
+            "bytes": 31762,
+            "sourcePath": "registry/frame.json#files[styles/frame.css]",
+            "target": "~/src/components/frame/frame.css",
+            "limitations": [
+              "Missing --motion-duration-normal, --motion-ease-decelerate, .message-appear/@keyframes frame-fadeInUp and .chip-selected additions. Do not rely on these additions for this installation route. No assertion of complete dynamic styling equivalence."
+            ]
+          }
+        },
+        "wrapper": "frame-root",
+        "dark": "dark class on wrapper or ancestor",
+        "license": "MIT; retain LICENSE and THIRD_PARTY_NOTICES.md with redistributed source",
+        "sourceCopy": true
+      },
+      "props": [
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": true,
+          "defaults": []
+        }
+      ],
+      "callbacks": [],
+      "types": [],
+      "defaults": [],
+      "exports": [
+        "SummaryFooter"
+      ],
+      "imports": [
+        "lucide-react",
+        "react"
+      ],
+      "nativeProps": {
+        "inherited": false,
+        "forwarding": "Only the declared props are accepted. React JSX intrinsic attributes (key) are framework semantics, not a native HTML prop passthrough."
+      },
+      "supportedStateProps": [],
+      "semantics": {
+        "name": "SummaryFooter",
+        "slug": "summary-footer",
+        "sourcePath": "components/summary-footer.tsx",
+        "boundSourceHash": "bf4f93b77c82f2d9956e02dcae32f3e4018ffb8aa90cfded2632d0c5a434c7aa",
+        "references": [
+          "children"
+        ],
+        "hostResponsibilities": [
+          "Host supplies summary text."
+        ],
+        "limitations": [
+          "No elapsed-time computation."
+        ]
+      },
+      "example": {
+        "path": "examples/summary-footer.tsx",
+        "sha256": "e1141ea0973429d1310f29f3c10ce1281f92634d11251097b9bb8b7d95c09dac",
+        "code": "import { SummaryFooter } from '../components/summary-footer';\nimport '../styles/frame.css';\n\nexport default function Example() {\n  return <div className=\"frame-root\"><div className=\"text-text-primary\"><SummaryFooter>Completed in 2 minutes</SummaryFooter></div></div>;\n}\n",
+        "setup": "Copy complete source closure to src/components/frame; change the example import to ./components/frame/<slug> and CSS import to ./components/frame/frame.css. Render inside frame-root with a matching host surface."
+      }
+    },
+    {
+      "name": "ChoiceCard",
+      "slug": "choice-card",
+      "description": "Selectable title and description card for choosing a prompt or workflow option.",
+      "source": {
+        "commit": "125a6f6d993851f567b32578a4f6e48515930337",
+        "tree": "05cf4cdfface969115e2c4b0c376a0515ace4f01",
+        "path": "components/choice-card.tsx",
+        "sha256": "c64bcb9d7a82df668d7d451384904689682e7158e977b826f725f54245e3ccb5",
+        "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/components/choice-card.tsx"
+      },
+      "install": {
+        "primary": "npx shadcn@latest add @frame/choice-card",
+        "primaryCollection": "npx shadcn@latest add @frame/frame",
+        "registry": "https://system.beibeidesign.com/r/{name}.json",
+        "single": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/choice-card.json",
+        "collection": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/frame.json",
+        "shadcnVersion": "4.21.0",
+        "import": "./components/frame/choice-card",
+        "dependencies": [
+          "react@19.2.5",
+          "react-dom@19.2.5",
+          "lucide-react@1.14.0"
+        ],
+        "files": [
+          {
+            "path": "components/choice-card.tsx",
+            "target": "~/src/components/frame/choice-card.tsx",
+            "sha256": "c64bcb9d7a82df668d7d451384904689682e7158e977b826f725f54245e3ccb5"
+          },
+          {
+            "path": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css",
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62"
+          }
+        ],
+        "css": "./components/frame/frame.css",
+        "cssVariants": {
+          "singleAndManual": {
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62",
+            "bytes": 32246,
+            "sourcePath": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css"
+          },
+          "collection": {
+            "sha256": "ec3dff7d31cd670881fe4585919e3800d0030eb80f7deb75c1cceccadf1c6837",
+            "bytes": 31762,
+            "sourcePath": "registry/frame.json#files[styles/frame.css]",
+            "target": "~/src/components/frame/frame.css",
+            "limitations": [
+              "Missing --motion-duration-normal, --motion-ease-decelerate, .message-appear/@keyframes frame-fadeInUp and .chip-selected additions. Do not rely on these additions for this installation route. No assertion of complete dynamic styling equivalence."
+            ]
+          }
+        },
+        "wrapper": "frame-root",
+        "dark": "dark class on wrapper or ancestor",
+        "license": "MIT; retain LICENSE and THIRD_PARTY_NOTICES.md with redistributed source",
+        "sourceCopy": true
+      },
+      "props": [
+        {
+          "name": "icon",
+          "type": "ReactNode",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "active",
+          "type": "boolean",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "false",
+              "owner": "ChoiceCard"
+            }
+          ]
+        },
+        {
+          "name": "onClick",
+          "type": "() => void",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "''",
+              "owner": "ChoiceCard"
+            }
+          ]
+        }
+      ],
+      "callbacks": [
+        {
+          "path": "onClick",
+          "signature": "() => void",
+          "required": false
+        }
+      ],
+      "types": [],
+      "defaults": [
+        {
+          "prop": "active",
+          "expression": "false",
+          "owner": "ChoiceCard"
+        },
+        {
+          "prop": "className",
+          "expression": "''",
+          "owner": "ChoiceCard"
+        }
+      ],
+      "exports": [
+        "ChoiceCard"
+      ],
+      "imports": [
+        "react"
+      ],
+      "nativeProps": {
+        "inherited": false,
+        "forwarding": "Only the declared props are accepted. React JSX intrinsic attributes (key) are framework semantics, not a native HTML prop passthrough."
+      },
+      "supportedStateProps": [
+        {
+          "name": "active",
+          "type": "boolean"
+        }
+      ],
+      "semantics": {
+        "name": "ChoiceCard",
+        "slug": "choice-card",
+        "sourcePath": "components/choice-card.tsx",
+        "boundSourceHash": "c64bcb9d7a82df668d7d451384904689682e7158e977b826f725f54245e3ccb5",
+        "references": [
+          "active",
+          "onClick",
+          "title"
+        ],
+        "hostResponsibilities": [
+          "Host manages selection and handles click; provide mobile hit area."
+        ],
+        "limitations": [
+          "No disabled prop or automatic selection group semantics."
+        ]
+      },
+      "example": {
+        "path": "examples/choice-card.tsx",
+        "sha256": "604bd5a7c6e590507f899b4b3b7d20e8b9136ea053a1c4cbe183fb5f1518967f",
+        "code": "import { Sparkles } from 'lucide-react';\nimport { ChoiceCard } from '../components/choice-card';\nimport '../styles/frame.css';\n\nexport default function Example() {\n  return <div className=\"frame-root\"><div className=\"text-text-primary\"><ChoiceCard icon={<Sparkles size={20} />} title=\"Summarize\" description=\"Create a brief overview.\" active /></div></div>;\n}\n",
+        "setup": "Copy complete source closure to src/components/frame; change the example import to ./components/frame/<slug> and CSS import to ./components/frame/frame.css. Render inside frame-root with a matching host surface."
+      }
+    },
+    {
+      "name": "ReviewItemCard",
+      "slug": "review-item-card",
+      "description": "Presentational review-result row with type, time and completed state; does not implement a review workflow.",
+      "source": {
+        "commit": "125a6f6d993851f567b32578a4f6e48515930337",
+        "tree": "05cf4cdfface969115e2c4b0c376a0515ace4f01",
+        "path": "components/review-item-card.tsx",
+        "sha256": "ae3cf9f7b75892c918d2711a046740a019a0057cc4f3350afb60f15529bfbfe6",
+        "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/components/review-item-card.tsx"
+      },
+      "install": {
+        "primary": "npx shadcn@latest add @frame/review-item-card",
+        "primaryCollection": "npx shadcn@latest add @frame/frame",
+        "registry": "https://system.beibeidesign.com/r/{name}.json",
+        "single": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/review-item-card.json",
+        "collection": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/frame.json",
+        "shadcnVersion": "4.21.0",
+        "import": "./components/frame/review-item-card",
+        "dependencies": [
+          "react@19.2.5",
+          "react-dom@19.2.5",
+          "lucide-react@1.14.0"
+        ],
+        "files": [
+          {
+            "path": "components/review-item-card.tsx",
+            "target": "~/src/components/frame/review-item-card.tsx",
+            "sha256": "ae3cf9f7b75892c918d2711a046740a019a0057cc4f3350afb60f15529bfbfe6"
+          },
+          {
+            "path": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css",
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62"
+          }
+        ],
+        "css": "./components/frame/frame.css",
+        "cssVariants": {
+          "singleAndManual": {
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62",
+            "bytes": 32246,
+            "sourcePath": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css"
+          },
+          "collection": {
+            "sha256": "ec3dff7d31cd670881fe4585919e3800d0030eb80f7deb75c1cceccadf1c6837",
+            "bytes": 31762,
+            "sourcePath": "registry/frame.json#files[styles/frame.css]",
+            "target": "~/src/components/frame/frame.css",
+            "limitations": [
+              "Missing --motion-duration-normal, --motion-ease-decelerate, .message-appear/@keyframes frame-fadeInUp and .chip-selected additions. Do not rely on these additions for this installation route. No assertion of complete dynamic styling equivalence."
+            ]
+          }
+        },
+        "wrapper": "frame-root",
+        "dark": "dark class on wrapper or ancestor",
+        "license": "MIT; retain LICENSE and THIRD_PARTY_NOTICES.md with redistributed source",
+        "sourceCopy": true
+      },
+      "props": [
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "source",
+          "type": "string",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "time",
+          "type": "string",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "done",
+          "type": "boolean",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "false",
+              "owner": "ReviewItemCard"
+            }
+          ]
+        },
+        {
+          "name": "icon",
+          "type": "LucideIcon",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "interactive",
+          "type": "boolean",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "false",
+              "owner": "ReviewItemCard"
+            }
+          ]
+        }
+      ],
+      "callbacks": [],
+      "types": [],
+      "defaults": [
+        {
+          "prop": "done",
+          "expression": "false",
+          "owner": "ReviewItemCard"
+        },
+        {
+          "prop": "interactive",
+          "expression": "false",
+          "owner": "ReviewItemCard"
+        }
+      ],
+      "exports": [
+        "ReviewItemCard"
+      ],
+      "imports": [
+        "lucide-react"
+      ],
+      "nativeProps": {
+        "inherited": false,
+        "forwarding": "Only the declared props are accepted. React JSX intrinsic attributes (key) are framework semantics, not a native HTML prop passthrough."
+      },
+      "supportedStateProps": [
+        {
+          "name": "done",
+          "type": "boolean"
+        }
+      ],
+      "semantics": {
+        "name": "ReviewItemCard",
+        "slug": "review-item-card",
+        "sourcePath": "components/review-item-card.tsx",
+        "boundSourceHash": "ae3cf9f7b75892c918d2711a046740a019a0057cc4f3350afb60f15529bfbfe6",
+        "references": [
+          "source",
+          "interactive",
+          "done"
+        ],
+        "hostResponsibilities": [
+          "Host provides review result; interactive only draws a chevron."
+        ],
+        "limitations": [
+          "source is declared but not rendered or destructured.",
+          "No onClick or link prop; no review execution or navigation."
+        ]
+      },
+      "example": {
+        "path": "examples/review-item-card.tsx",
+        "sha256": "2ed3f37616104ee0b254b5f8cdded75d6f488d8c3d40291fd0fcf6a8ead19c8e",
+        "code": "import { ReviewItemCard } from '../components/review-item-card';\nimport '../styles/frame.css';\n\nexport default function Example() {\n  return <div className=\"frame-root\"><div className=\"text-text-primary\"><ReviewItemCard title=\"Draft summary\" type=\"Document\" time=\"Just now\" interactive={false} /></div></div>;\n}\n",
+        "setup": "Copy complete source closure to src/components/frame; change the example import to ./components/frame/<slug> and CSS import to ./components/frame/frame.css. Render inside frame-root with a matching host surface."
+      }
+    },
+    {
+      "name": "EmptyState",
+      "slug": "empty-state",
+      "description": "Icon and explanation for an empty message, result or reference area.",
+      "source": {
+        "commit": "125a6f6d993851f567b32578a4f6e48515930337",
+        "tree": "05cf4cdfface969115e2c4b0c376a0515ace4f01",
+        "path": "components/empty-state.tsx",
+        "sha256": "16f520583d4b61f9479dd0d1635dfda280c51e440b4f3185e44a497c8a2a1668",
+        "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/components/empty-state.tsx"
+      },
+      "install": {
+        "primary": "npx shadcn@latest add @frame/empty-state",
+        "primaryCollection": "npx shadcn@latest add @frame/frame",
+        "registry": "https://system.beibeidesign.com/r/{name}.json",
+        "single": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/empty-state.json",
+        "collection": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/frame.json",
+        "shadcnVersion": "4.21.0",
+        "import": "./components/frame/empty-state",
+        "dependencies": [
+          "react@19.2.5",
+          "react-dom@19.2.5",
+          "lucide-react@1.14.0"
+        ],
+        "files": [
+          {
+            "path": "components/empty-state.tsx",
+            "target": "~/src/components/frame/empty-state.tsx",
+            "sha256": "16f520583d4b61f9479dd0d1635dfda280c51e440b4f3185e44a497c8a2a1668"
+          },
+          {
+            "path": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css",
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62"
+          }
+        ],
+        "css": "./components/frame/frame.css",
+        "cssVariants": {
+          "singleAndManual": {
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62",
+            "bytes": 32246,
+            "sourcePath": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css"
+          },
+          "collection": {
+            "sha256": "ec3dff7d31cd670881fe4585919e3800d0030eb80f7deb75c1cceccadf1c6837",
+            "bytes": 31762,
+            "sourcePath": "registry/frame.json#files[styles/frame.css]",
+            "target": "~/src/components/frame/frame.css",
+            "limitations": [
+              "Missing --motion-duration-normal, --motion-ease-decelerate, .message-appear/@keyframes frame-fadeInUp and .chip-selected additions. Do not rely on these additions for this installation route. No assertion of complete dynamic styling equivalence."
+            ]
+          }
+        },
+        "wrapper": "frame-root",
+        "dark": "dark class on wrapper or ancestor",
+        "license": "MIT; retain LICENSE and THIRD_PARTY_NOTICES.md with redistributed source",
+        "sourceCopy": true
+      },
+      "props": [
+        {
+          "name": "icon",
+          "type": "LucideIcon",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "className",
+          "type": "string",
+          "required": false,
+          "defaults": [
+            {
+              "expression": "''",
+              "owner": "EmptyState"
+            }
+          ]
+        }
+      ],
+      "callbacks": [],
+      "types": [],
+      "defaults": [
+        {
+          "prop": "className",
+          "expression": "''",
+          "owner": "EmptyState"
+        }
+      ],
+      "exports": [
+        "EmptyState"
+      ],
+      "imports": [
+        "lucide-react"
+      ],
+      "nativeProps": {
+        "inherited": false,
+        "forwarding": "Only the declared props are accepted. React JSX intrinsic attributes (key) are framework semantics, not a native HTML prop passthrough."
+      },
+      "supportedStateProps": [],
+      "semantics": {
+        "name": "EmptyState",
+        "slug": "empty-state",
+        "sourcePath": "components/empty-state.tsx",
+        "boundSourceHash": "16f520583d4b61f9479dd0d1635dfda280c51e440b4f3185e44a497c8a2a1668",
+        "references": [
+          "icon",
+          "title",
+          "description"
+        ],
+        "hostResponsibilities": [
+          "Host supplies a lucide icon component and explanation."
+        ],
+        "limitations": [
+          "No action callback or data fetching."
+        ]
+      },
+      "example": {
+        "path": "examples/empty-state.tsx",
+        "sha256": "df40680cba999221e25223cb388da69b326c850ced5790eefe88c7a36c92ef6c",
+        "code": "import { Info } from 'lucide-react';\nimport { EmptyState } from '../components/empty-state';\nimport '../styles/frame.css';\n\nexport default function Example() {\n  return <div className=\"frame-root\"><div className=\"text-text-primary\"><EmptyState icon={Info} title=\"No results yet\" description=\"Results will appear after your first request.\" /></div></div>;\n}\n",
+        "setup": "Copy complete source closure to src/components/frame; change the example import to ./components/frame/<slug> and CSS import to ./components/frame/frame.css. Render inside frame-root with a matching host surface."
+      }
+    },
+    {
+      "name": "VersionRow",
+      "slug": "version-row",
+      "description": "Version comparison and update-status presentation without a network or update client.",
+      "source": {
+        "commit": "125a6f6d993851f567b32578a4f6e48515930337",
+        "tree": "05cf4cdfface969115e2c4b0c376a0515ace4f01",
+        "path": "components/version-row.tsx",
+        "sha256": "72ea0d821524367454844cb5b85b43b75fdad3aa479cf32bebe80a2595d90267",
+        "url": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/components/version-row.tsx"
+      },
+      "install": {
+        "primary": "npx shadcn@latest add @frame/version-row",
+        "primaryCollection": "npx shadcn@latest add @frame/frame",
+        "registry": "https://system.beibeidesign.com/r/{name}.json",
+        "single": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/version-row.json",
+        "collection": "https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/125a6f6d993851f567b32578a4f6e48515930337/registry/frame.json",
+        "shadcnVersion": "4.21.0",
+        "import": "./components/frame/version-row",
+        "dependencies": [
+          "react@19.2.5",
+          "react-dom@19.2.5",
+          "lucide-react@1.14.0"
+        ],
+        "files": [
+          {
+            "path": "components/version-row.tsx",
+            "target": "~/src/components/frame/version-row.tsx",
+            "sha256": "72ea0d821524367454844cb5b85b43b75fdad3aa479cf32bebe80a2595d90267"
+          },
+          {
+            "path": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css",
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62"
+          }
+        ],
+        "css": "./components/frame/frame.css",
+        "cssVariants": {
+          "singleAndManual": {
+            "sha256": "58bb14ac01da118320d3591b46a9be19f09536f8cfa37fb68ffeb857486c7c62",
+            "bytes": 32246,
+            "sourcePath": "styles/frame.css",
+            "target": "~/src/components/frame/frame.css"
+          },
+          "collection": {
+            "sha256": "ec3dff7d31cd670881fe4585919e3800d0030eb80f7deb75c1cceccadf1c6837",
+            "bytes": 31762,
+            "sourcePath": "registry/frame.json#files[styles/frame.css]",
+            "target": "~/src/components/frame/frame.css",
+            "limitations": [
+              "Missing --motion-duration-normal, --motion-ease-decelerate, .message-appear/@keyframes frame-fadeInUp and .chip-selected additions. Do not rely on these additions for this installation route. No assertion of complete dynamic styling equivalence."
+            ]
+          }
+        },
+        "wrapper": "frame-root",
+        "dark": "dark class on wrapper or ancestor",
+        "license": "MIT; retain LICENSE and THIRD_PARTY_NOTICES.md with redistributed source",
+        "sourceCopy": true
+      },
+      "props": [
+        {
+          "name": "label",
+          "type": "string",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "current",
+          "type": "string",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "latest",
+          "type": "string | null",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "status",
+          "type": "'up-to-date' | 'update-available' | 'unknown'",
+          "required": true,
+          "defaults": []
+        },
+        {
+          "name": "error",
+          "type": "string",
+          "required": false,
+          "defaults": []
+        },
+        {
+          "name": "loading",
+          "type": "boolean",
+          "required": false,
+          "defaults": []
+        }
+      ],
+      "callbacks": [],
+      "types": [],
+      "defaults": [],
+      "exports": [
+        "StatusVariant",
+        "StatusTag",
+        "VersionRow"
+      ],
+      "imports": [
+        "lucide-react",
+        "react"
+      ],
+      "nativeProps": {
+        "inherited": false,
+        "forwarding": "Only the declared props are accepted. React JSX intrinsic attributes (key) are framework semantics, not a native HTML prop passthrough."
+      },
+      "supportedStateProps": [
+        {
+          "name": "status",
+          "type": "'up-to-date' | 'update-available' | 'unknown'"
+        },
+        {
+          "name": "error",
+          "type": "string"
+        },
+        {
+          "name": "loading",
+          "type": "boolean"
+        }
+      ],
+      "semantics": {
+        "name": "VersionRow",
+        "slug": "version-row",
+        "sourcePath": "components/version-row.tsx",
+        "boundSourceHash": "72ea0d821524367454844cb5b85b43b75fdad3aa479cf32bebe80a2595d90267",
+        "references": [
+          "status",
+          "error",
+          "loading",
+          "latest"
+        ],
+        "hostResponsibilities": [
+          "Host supplies current/latest versions, loading and error values."
+        ],
+        "limitations": [
+          "No network check, updater or retry callback."
+        ]
+      },
+      "example": {
+        "path": "examples/version-row.tsx",
+        "sha256": "de4797a2aab041443734137bb3f456c44237c7e02079328ef8d98a032ac8fd00",
+        "code": "import { VersionRow } from '../components/version-row';\nimport '../styles/frame.css';\n\nexport default function Example() {\n  return <div className=\"frame-root\"><div className=\"text-text-primary\"><VersionRow label=\"Local editor\" current=\"1.0\" latest=\"1.1\" status=\"update-available\" /></div></div>;\n}\n",
+        "setup": "Copy complete source closure to src/components/frame; change the example import to ./components/frame/<slug> and CSS import to ./components/frame/frame.css. Render inside frame-root with a matching host surface."
+      }
+    }
+  ],
+  "coverage": {
+    "api": "23 primary components; complete locally referenced props type closure; exact external React/native type references",
+    "browser": "Separate evidence required; generation is not browser or Agent adoption verification.",
+    "publicActivation": "Not performed",
+    "coldAgentSessions": "Not performed"
+  }
+}

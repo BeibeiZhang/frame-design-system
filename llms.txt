@@ -62,3 +62,8 @@ Before Frame is included in the official shadcn Registry Directory, add this ent
 ```
 
 Merge this entry into your existing configuration. The flat registry index is https://system.beibeidesign.com/r/registry.json. Once the official directory includes @frame, the CLI resolves the namespace automatically. The raw GitHub URL install address https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/main/registry/frame.json remain available as a fallback.
+
+## Component API contracts
+
+- [Component contracts and examples](https://github.com/BeibeiZhang/frame-design-system/tree/main/docs/components): Exact released props, callbacks, defaults, install requirements and host responsibilities for 23 components.
+- [Machine-readable component index](https://raw.githubusercontent.com/BeibeiZhang/frame-design-system/main/docs/components/index.json): Source-bound API contracts and minimal examples.
